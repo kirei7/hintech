@@ -1,0 +1,101 @@
+body {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+
+
+/*1 section*/
+#player-container {
+    overflow: hidden;
+    pointer-events: none;
+}
+
+#video-title {
+    position: absolute;
+    top: 480px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 134px;
+    color: #fff;
+    text-shadow: 1.5px 2.6px 136px rgba(0,0,0,.22);
+    font-family: "UnitSlabOffcPro-Bold",Arial,sans-serif;
+    line-height: 134px;
+    letter-spacing: -.01em;
+    margin-top: -112px;
+}
+
+/*1 section /end*/
+
+/*2 section*/
+#topblock {
+    padding-bottom: 50px;
+}
+.text-blue {
+    color: #0060ae;
+}
+
+#topblock-header {
+    color: #636a70;
+    font-size: 78px;
+}
+
+#menu-abs a {
+    display: inline-block;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 41px;
+    height: 41px;
+    position: absolute;
+}
+#menu-abs a:hover {
+    width: 102px;
+    height: 102px;
+    background-position: top right;
+    background-size: 80%;
+}
+#menu-abs-button-1 {
+    background-image: url("../img/menu-abs/ic1.png");
+    left: 2%;
+    bottom: 10%;
+}
+#menu-abs-button-2 {
+    background-image: url("../img/menu-abs/ic2.png");
+    left: 18%;
+    bottom: 0;
+}
+#menu-abs-button-3 {
+    background-image: url("../img/menu-abs/ic3.png");
+    left: 36%;
+    bottom: -6%;
+}
+#menu-abs-button-4 {
+    background-image: url("../img/menu-abs/ic4.png");
+    left: 56%;
+    bottom: -8%;
+}
+#topblock-button {
+    color: white;
+    background-color: #0060ae;
+    text-transform: capitalize;
+    padding: 13px 29px;
+    width: 88px;
+    height: 17px;
+    border-radius: 4px;
+}
+#topblock-button:hover {
+    text-decoration: none;
+}
+/*2 section /end*/
+
+/*3 section*/
+#flipcards h1, small{
+    font-size: 68px;
+    line-height: 72px;
+}
+#flipcards h1 {
+    font-weight: bold;
+}
+
+/*3 section /end*/

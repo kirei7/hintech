@@ -1,0 +1,15 @@
+/*Fonts*/
+@font-face {
+    font-family:"UnitSlabOffcPro-Bold";
+    src: url("../fonts/UnitSlabOffcPro-Bold.ttf") /* TTF file for CSS3 browsers */
+}
+@font-face {
+    font-family: "Raleway";
+    src: url("../fonts/raleway/Raleway-Medium.ttf");
+}
+@font-face {
+    font-family: "Raleway-light";
+    src: url("../fonts/raleway/Raleway-ExtraLight.ttf");
+}
+
+/*Fonts /end*/
