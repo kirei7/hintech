@@ -97,5 +97,46 @@ body {
 #flipcards h1 {
     font-weight: bold;
 }
+.flip-container {
+    padding: 0 !important;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    transition: color 0.3s, background-color 0.3s;
+}
+.flip-container:hover {
+    color: white;
+    background-color: #f41b22;
+}
+.flip-container>div {
+    height: 800px;
+}
+.flip-container>div>div {
+    padding: 30px;
+}
+.flip-container:first-child, .flip-container:last-child {
+    background-color: #eef0f1;
+}
+.flip-container:first-child:hover {
+    background-color: #b9bbbe;
+}
+.flip-container:last-child:hover {
+    background-color: #00d1fe;
+}
 
 /*3 section /end*/
+
+/*7 section*/
+#analitics {
+    background: url("../img/horizontal-scroll/analytics-bg.png") no-repeat center center;
+}
+#analitics-wrap {
+    height: 565px;
+    width: 775px;
+    overflow: hidden;
+    padding-top: 49px;
+    padding-bottom: 80px;
+}
+#analitics-wrap img {
+    height: 100%;
+}
+/*7 section /end*/

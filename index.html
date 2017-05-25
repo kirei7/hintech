@@ -10,7 +10,9 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <link href="css/main.css" rel="stylesheet">
+    <link href="css/flip.css" rel="stylesheet">
     <link href="css/tabs.css" rel="stylesheet">
+    <link href="css/horizontal-scroll.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -35,11 +37,12 @@
         <div class="row">
             <div class="col-md-7">
                 <h1 id="topblock-header"><span class="text-blue">A new</span><br>
-                generation of <span class="text-blue">table</span> </h1>
+                    generation of <span class="text-blue">table</span></h1>
                 <p>Hinteractive Technology was founded in order to provide consumers of different segments
                     to satisfy their needs in the field of interaction of high interactive technologies.</p>
                 <p>We are young talented team which is an official representative of KODISOFT, whose main
-                    task is to become a leader in the field of implementation and full integration of interactive solutions.</p>
+                    task is to become a leader in the field of implementation and full integration of interactive
+                    solutions.</p>
                 <p>Our vision is to inspire people from all over the world to join common desire of creating a new era,
                     improved, easily adapted for the needs of people, modern businesses and governmental forms.</p>
                 <a href="#" id="topblock-button">SEND INQUIRY</a>
@@ -61,7 +64,7 @@
 
 <!--section3-->
 <section>
-    <div id="flipcards" class="row">
+    <!--<div id="flipcards" class="row">
         <div class="col-md-4 text-center">
             <small>01.</small>
             <h1>Double your profit</h1>
@@ -77,7 +80,46 @@
             <h1>Take full control</h1>
             <img src="img/benefits/benefits03.png" class="img-responsive center-block">
         </div>
+    </div>-->
+    <div id="flipcards" class="row text-center">
+        <div class="flip-container col-md-4">
+            <div class="card">
+                <div class="front">
+                    <small>01.</small>
+                    <h1>Double your profit</h1>
+                    <img src="img/benefits/benefits01.png" class="img-responsive center-block">
+                </div>
+                <div class="back">
+                    <p>text</p>
+                </div>
+            </div>
+        </div>
+        <div class="flip-container col-md-4">
+            <div class="card">
+                <div class="front">
+                    <small>02.</small>
+                    <h1>Slash your cost</h1>
+                    <img src="img/benefits/benefits02.png" class="img-responsive center-block">
+                </div>
+                <div class="back">
+                    <p>text</p>
+                </div>
+            </div>
+        </div>
+        <div class="flip-container col-md-4">
+            <div class="card">
+                <div class="front">
+                    <small>03.</small>
+                    <h1>Take full control</h1>
+                    <img src="img/benefits/benefits03.png" class="img-responsive center-block">
+                </div>
+                <div class="back">
+                    <p>text</p>
+                </div>
+            </div>
+        </div>
 
+    </div>
     </div>
 </section>
 
@@ -105,9 +147,28 @@
     </div>
 </section>
 
+<!--section7-->
+<section>
+    <div class="container">
+        <div class="row">
+            <div id="analitics" class="col-md-12">
+                <div id="analitics-wrap" class="center-block">
+                    <img src="img/horizontal-scroll/analytics.jpg">
+                </div>
+            </div>
+            <div class="col-md-8 col-md-offset-2 text-center">
+                <input id="horizontal-slider" type="range" min="0" max="1000" value="0"
+                       oninput="horizontalScroll(this.value)" onchange="horizontalScroll(this.value)">
+            </div>
+        </div>
+    </div>
+</section>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/video.js"></script>
 <script src="js/tabs.js"></script>
+<script src="js/flip.js"></script>
+<script src="js/horizontal-scroll.js"></script>
 </body>
 </html>
