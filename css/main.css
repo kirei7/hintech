@@ -2,6 +2,9 @@ body {
     max-width: 1920px;
     margin: 0 auto;
 }
+section {
+    margin: 120px auto;
+}
 
 
 
@@ -125,7 +128,7 @@ body {
 
 /*3 section /end*/
 
-/*7 section*/
+/*5 section*/
 #analitics {
     background: url("../img/horizontal-scroll/analytics-bg.png") no-repeat center center;
 }
@@ -139,4 +142,37 @@ body {
 #analitics-wrap img {
     height: 100%;
 }
-/*7 section /end*/
+/*5 section /end*/
+
+/*9 section*/
+#inside-sensor {
+    background: url("../img/inside/displays.png") center right no-repeat;
+    background-size: contain;
+    color: #747474;
+    height: 533px;
+}
+#inside-sensor>div {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+#inside-sensor b {
+    color: black;
+}
+#inside-hardware {
+    background: url("../img/inside/hardware.png") center right no-repeat;
+    background-size: contain;
+    color: #747474;
+    margin-top: 30px;
+    height: 533px;
+}
+#inside-hardware li {
+    border-top: 1px solid #ebebeb;
+}
+.list-header {
+    font-size: 22px;
+}
+#inside-hardware>div {
+    border-bottom: 1px solid #ebebeb;
+    width: 360px;
+}
+/*9 section /end*/
