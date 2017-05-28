@@ -100,29 +100,29 @@ section {
 #flipcards h1 {
     font-weight: bold;
 }
-.flip-container {
+#flipcards .flip-container {
     padding: 0 !important;
     cursor: pointer;
     background-color: #f9f9f9;
     transition: color 0.3s, background-color 0.3s;
 }
-.flip-container:hover {
+#flipcards .flip-container:hover {
     color: white;
     background-color: #f41b22;
 }
-.flip-container>div {
+#flipcards .card {
     height: 800px;
 }
-.flip-container>div>div {
+#flipcards .card>div {
     padding: 30px;
 }
-.flip-container:first-child, .flip-container:last-child {
+#flipcards .flip-container:first-child, #flipcards .flip-container:last-child {
     background-color: #eef0f1;
 }
-.flip-container:first-child:hover {
+#flipcards .flip-container:first-child:hover {
     background-color: #b9bbbe;
 }
-.flip-container:last-child:hover {
+#flipcards .flip-container:last-child:hover {
     background-color: #00d1fe;
 }
 
@@ -143,6 +143,12 @@ section {
     height: 100%;
 }
 /*5 section /end*/
+
+/*7 section*/
+#protection-player-container {
+    margin: 150px 0;
+}
+/*7 section /end*/
 
 /*9 section*/
 #inside-sensor {
@@ -176,3 +182,168 @@ section {
     width: 360px;
 }
 /*9 section /end*/
+
+/*10 section*/
+#slider-10 {
+    min-height: 600px;
+    background: url("../img/slider10/ten-background.jpg") center;
+    background-size: contain;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.slick-slider *:focus {
+    outline: none;
+}
+.fading {
+    background-color: rgba(0,0,0,0.75);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+#slider-10-container {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.slider-10-content {
+    color: #dfdfdf;
+    width: 360px;
+    margin: 15% auto auto auto;
+    line-height: 1.2;
+}
+.slider-10-content h1 {
+    font-size: 21px;
+}
+.slider-10-content li {
+    margin-top: 10px;
+}
+.slider-10-content b {
+    font-weight: bold;
+    color: #E0FC05;
+}
+#slider-10-performance {
+    font-size: 16px;
+    line-height: 1.2;
+}
+#slider-10-income {
+    font-size: 8px;
+}
+#slider-10-income .column {
+    display: inline-block;
+    width: 30%;
+    margin-right: 4%;
+    margin-top: 20px;
+    border-left: 1px solid #dfdfdf;
+    padding-left: 4px;
+}
+#slider-10-income .column b{
+    font-size: 10px;
+}
+#slider-10-income .column:last-child {
+    margin-right: 0;
+}
+#slider-10-income .column p {
+    margin-bottom: 0;
+}
+#slider-10-income .text-big {
+    font-size: 29px;
+    font-weight: bold;
+}
+
+.slick-arrow {
+    position: absolute;
+    height: 86px;
+    width: 86px;
+    top: calc(50% - 43px);
+    z-index: 999;
+    background: url("../img/slider10/dark-arrow.svg") center no-repeat;
+    border: none;
+
+}
+.slick-prev {
+    left: 0;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+
+}
+.slick-next {
+    right: 0;
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    transform: rotate(270deg);
+}
+
+/*10 section /end*/
+
+/*11 section*/
+
+/*#usecases img, #usecases .card>div, #usecases .card {
+    width: 100%;
+    height: 413px;
+}
+#usecases .flip-container {
+    padding: 0;
+}*/
+
+/*11 section /end*/
+
+/*12 section*/
+/*12 section /end*/
+
+footer {
+    background: url("../img/back-footer.png") center center no-repeat;
+}
+footer h1{
+    font-size: 58px;
+}
+footer form input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #cccccc;
+}
+footer form input::-moz-placeholder { /* Firefox 19+ */
+    color: #cccccc;
+}
+footer form input:-ms-input-placeholder { /* IE 10+ */
+    color: #cccccc;
+}
+footer form input:-moz-placeholder { /* Firefox 18- */
+    color: #cccccc;
+} {
+
+}
+footer form input {
+    display: block;
+    width: 100%;
+    height: 53px;
+    color: #333;
+    border: 1px solid #ecedee;;
+    font-size: 13px;
+    padding: 8px 15px;
+    margin-top: 20px;
+
+}
+footer form input[type="submit"] {
+    border-color: #fff;
+    color: #fff;
+    height: 43px;
+    width: 200px;
+    background: #0060ae;
+    border-radius: 4px;
+
+}
+.footer-text {
+    margin: 20px auto;
+    padding-top: 65px;
+    font-size: 17px;
+    color: white;
+}
+.footer-text p {
+    line-height: 1;
+}

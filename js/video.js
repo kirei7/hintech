@@ -10,16 +10,28 @@ window.onload = window.onresize = function () {
     sizee();
 }
 var player;
+var player2;
+
 function onYouTubeIframeAPIReady() {
     player = new YT.Player('player', {
         height: '966',
         width: '1718',
         videoId: 'qyo9oV-GLVc',
-        playerVars: { 'autoplay': 1, 'controls': 0, 'autohide': 1, 'wmode': 'opaque', 'showinfo': '0', 'autohide': '1', 'rel': '0' },
+        playerVars: { 'autoplay': 1, 'controls': 0, 'wmode': 'opaque', 'showinfo': '0', 'autohide': '1', 'rel': '0' },
         events: {
             'onReady': onPlayerReady
         }
     });
+    player2 = new YT.Player('protection-player', {
+        height: '966',
+        width: '1718',
+        videoId: 'pAJYjslMIBg',
+        playerVars: { 'autoplay': 1, 'controls': 0, 'wmode': 'opaque', 'showinfo': '0', 'autohide': '1', 'rel': '0' },
+        events: {
+            'onReady': onPlayerReady
+        }
+    });
+
 }
 
 // 4. The API will call this function when the video player is ready.
@@ -31,24 +43,29 @@ function stopVideo() {
     player.pauseVideo();
     player.seekTo(5);
     player.playVideo();
+    player2.pauseVideo();
+    player2.seekTo(5);
+    player2.playVideo();
+
     setTimeout(stopVideo, 70000);
     sizee();
 }
 function sizee() {
+    //var textt = document.getElementById("textt");
+    sizeeInner(document.getElementById("player"));
+    sizeeInner(document.getElementById("protection-player"));
+
+}
+function sizeeInner(player) {
     var ww = window.innerWidth;
-    var player = document.getElementById("player");
-    var textt = document.getElementById("textt");
     if (ww > 1200) {
         player.style.width = ww + 'px';
         player.style.height = ww * 720 / 1280 + 'px';
-        textt.style.top = (ww * 720 / 1280 / 2) - 10 + 'px';
+        //textt.style.top = (ww * 720 / 1280 / 2) - 10 + 'px';
     }
     else {
         player.style.width = '1200px';
         player.style.height = '675px';
-        textt.style.top = (675 / 2) - 10 + 'px';
+        //textt.style.top = (675 / 2) - 10 + 'px';
     }
-
-    document.getElementById("asd").style.height = document.getElementById("player").style.height;
-
 }

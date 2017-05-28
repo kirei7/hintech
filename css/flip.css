@@ -5,6 +5,7 @@
     -o-perspective: 800px;
     perspective: 800px;
 }
+
 .card {
     width: 100%;
     -webkit-transition: -webkit-transform 1s;
@@ -41,3 +42,16 @@
     -o-transform: rotateY( 180deg );
     transform: rotateY( 180deg );
 }
+/*
+#usecases .card {
+    -webkit-transition: -webkit-transform 0.2s;
+    -moz-transition: -moz-transform 0.2s;
+    -o-transition: -o-transform 0.2s;
+    transition: transform 0.2s;
+}
+#usecases .card:hover {
+    -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg );
+}*/
