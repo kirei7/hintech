@@ -2,11 +2,21 @@ body {
     max-width: 1920px;
     margin: 0 auto;
 }
+/*
 section {
     margin: 120px auto;
 }
-
-
+*/
+section {
+	margin: 0px auto;
+}
+p {
+	font-size: 20px;
+}
+.mt-120 {
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
 
 /*1 section*/
 #player-container {
@@ -33,7 +43,11 @@ section {
 
 /*2 section*/
 #topblock {
-    padding-bottom: 50px;
+    padding: 100px 0;
+    background: url("../img/back-header.png") top center no-repeat;
+}
+#topblock img{
+	margin-top: 10%;
 }
 .text-blue {
     color: #0060ae;
@@ -41,7 +55,7 @@ section {
 
 #topblock-header {
     color: #636a70;
-    font-size: 78px;
+    font-size: 66px;
 }
 
 #menu-abs a {
@@ -51,12 +65,6 @@ section {
     width: 41px;
     height: 41px;
     position: absolute;
-}
-#menu-abs a:hover {
-    width: 102px;
-    height: 102px;
-    background-position: top right;
-    background-size: 80%;
 }
 #menu-abs-button-1 {
     background-image: url("../img/menu-abs/ic1.png");
@@ -136,6 +144,23 @@ section {
 }
 /*4 section/end*/
 
+/*'brave new' section*/
+#brave-new {
+    background: url("../img/operation-bg.jpg") center center no-repeat;
+    min-height: 800px;
+}
+#brave-new h1{
+    font-size: 106px;
+    line-height: 110px;
+}
+#brave-new img {
+    margin-top: 71px;
+    width: 766px;
+    height: auto;
+}
+
+/*'brave new' section /end*/
+
 /*5 section*/
 #analitics {
     background: url("../img/horizontal-scroll/analytics-bg.png") no-repeat center center;
@@ -161,13 +186,13 @@ section {
 /*8 section*/
 .technology-slide {
     padding: 50px 40px;
-}
-.technology-text {
-    width: 320px;
+    max-width: 1280px;
+    margin: 0 auto;
 }
 .technology-text {
     line-height: 32px;
     font-size: 21px;
+    display: inline-block;
 }
 .technology-text p:first-child {
     font-size: 24px;
@@ -180,14 +205,23 @@ section {
     font-size: 54px;
 }
 
-#technology-multitouch {
-    background: url("../img/technology/technology-img1.jpg") center right no-repeat;
+.technology-img-pointer {
+    display: block;
+    margin-top: 55px;
 }
-#technology-recognition {
-    background: black url("../img/technology/hands.png") no-repeat center right;
-    color: white;
+/*.technology-img-pointer:before {
+    position: absolute;
+    right: 0;
+    content: "";
+    border-bottom: 1px solid #000;
+    width: 40px;
+}*/
+.display-info {
+    border-left: 1px solid black;
+    position: relative;
+    padding-left: 15px;
+    height: 150px;
 }
-
 /*8 section/end*/
 
 /*9 section*/
@@ -227,7 +261,7 @@ section {
 #slider-10 {
     min-height: 600px;
     background: url("../img/slider10/ten-background.jpg") center;
-    background-size: contain;
+    background-size: cover;
     overflow: hidden;
     position: relative;
     width: 100%;
@@ -251,7 +285,7 @@ section {
 .slider-10-content {
     color: #dfdfdf;
     width: 360px;
-    margin: 15% auto auto auto;
+    margin: auto;
     line-height: 1.2;
 }
 .slider-10-content h1 {
@@ -324,14 +358,65 @@ section {
 /*10 section /end*/
 
 /*11 section*/
-
-/*#usecases img, #usecases .card>div, #usecases .card {
-    width: 100%;
-    height: 413px;
+#usecases {
+    margin: 150px auto;
+}
+#usecases h1 {
+    font-size: 58px
+}
+#usecases .card {
+    -webkit-transition: -webkit-transform 0.3s;
+    -moz-transition: -moz-transform 0.3s;
+    -o-transition: -o-transform 0.3s;
+    transition: transform 0.3s;
 }
 #usecases .flip-container {
-    padding: 0;
-}*/
+    margin: 0 auto;
+}
+.usecases-img-container {
+    height: 406px;
+    width: 100%;
+    overflow: hidden;
+}
+.usecases-img-container img {
+    width: 100%;
+}
+#usecases .card {
+    background-color: #eaeaea;
+}
+#usecases .back {
+    background-color: rgb(59, 63, 66);
+    color: white;
+    padding: 20px;
+}
+#usecases .back p {
+    margin-top: 230px;
+    text-align: center;
+}
+#usecases-1, #usecases-2, #usecases-3, #usecases-4 {
+    margin-bottom: 30px;
+    height: 500px;
+    display: inline-block;
+    cursor: pointer;
+}
+#usecases-1 {
+    width: 642px;
+    margin-right: 20px;
+}
+#usecases-2 {
+    width: 473px;
+}
+#usecases-3 {
+    width: 473px;
+}
+#usecases-4 {
+    width: 642px;
+}
+#usecases h3 {
+    text-align: center;
+    padding-left: 10px;
+    font-size: 58px;
+}
 
 /*11 section /end*/
 

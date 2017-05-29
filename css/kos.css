@@ -1,0 +1,66 @@
+.tab-content {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+#flipcards .card .back{
+	display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 24px;
+}
+#flipcards .card .back b{
+    font-size: 28px;
+	text-transform: uppercase;
+}
+div.tab button.tablinks {
+    background-color: transparent!important;
+}
+.color-1, div.tab button.color-1.active{
+	background-color: #b9bbbe!important;
+}
+.color-2, div.tab button.color-2.active {
+	background-color: #e8666a!important
+}
+.color-3, div.tab button.color-3.active {
+	background-color: #52aec1!important;
+}
+.color-4, div.tab button.color-4.active {
+	background-color: #41b57c!important;
+}
+.color-5, div.tab button.color-5.active {
+	background-color: #f1bb39!important;
+}
+.color-6, div.tab button.color-6.active {
+	background-color: #bb6185!important;
+}
+.color-7, div.tab button.color-7.active {
+	background-color: #3f79a9!important;
+}
+.color-8, div.tab button.color-8.active {
+	background-color: #55c7ae!important;
+}
+.tabcontent {
+	padding: 0px 30px;
+	text-align: center;
+	border-radius: 0px 10px 10px 0px;
+}
+.tabcontent p{
+	font-size: 26px;
+}
+.tabcontent h3 {
+	font-size: 48px;
+}
+
+#slider-10 .slick-list, #slider-10 .slick-track {
+	height: 600px;
+}
+#slider-10 .slick-initialized .slick-slide{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}

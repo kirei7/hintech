@@ -7,6 +7,10 @@ $(document).ready(function () {
         arrows: false,
         draggable: false
     });
+    $('#technology').slick({
+        autoplay: false,
+        infinite: false
+    });
     $('#restaurants-slider').slick({
         infinite: true,
         slidesToShow: 3,
@@ -18,8 +22,7 @@ $(document).ready(function () {
     //initialize sliders /end
 
     //clear the arrow buttons from text
-    $('#slider-10-container .slick-arrow').empty();
-    $('#restaurants-slider .slick-arrow').empty();
+    $('.slick-arrow').empty();
 
     //verticalAlignInSlider()
 

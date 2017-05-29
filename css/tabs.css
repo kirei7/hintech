@@ -1,7 +1,6 @@
 /* Style the tab */
 div.tab {
     float: left;
-    background-color: #f1f1f1;
     width: 30%;
 }
 
@@ -16,17 +15,17 @@ div.tab button {
     outline: none;
     text-align: left;
     cursor: pointer;
-    transition: 0.3s;
     font-size: 17px;
+    border-radius: 10px 0 0 10px;
 
 
     border-right: 1px solid #ccc;
 }
 
 /* Change background color of buttons on hover */
-div.tab button:hover {
+/*div.tab button:hover {
     background-color: #ddd;
-}
+}*/
 
 /* Create an active/current "tab button" class */
 div.tab button.active {
@@ -40,6 +39,7 @@ div.tab button.active {
     padding: 0px 12px;
     border: 1px solid #ccc;
     border-left: none;
+    border-right: none;
     width: 70%;
     border-left: none;
     height: 100%;
