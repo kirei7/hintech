@@ -52,20 +52,29 @@ function stopVideo() {
 }
 function sizee() {
     //var textt = document.getElementById("textt");
-    sizeeInner(document.getElementById("player"));
-    sizeeInner(document.getElementById("protection-player"));
+    sizeeInner(
+        document.getElementById("player"),
+        document.getElementById("player-container")
+    );
+    sizeeInner(
+        document.getElementById("protection-player"),
+        document.getElementById("protection-player-container")
+    );
 
 }
-function sizeeInner(player) {
+function sizeeInner(player, container) {
     var ww = window.innerWidth;
     if (ww > 1200) {
         player.style.width = ww + 'px';
-        player.style.height = ww * 720 / 1280 + 'px';
+        var height = ww * 720 / 1280 + 'px';
+        player.style.height = height;
+        container.style.height = height;
         //textt.style.top = (ww * 720 / 1280 / 2) - 10 + 'px';
     }
     else {
         player.style.width = '1200px';
         player.style.height = '675px';
+        container.style.height = '675px';
         //textt.style.top = (675 / 2) - 10 + 'px';
     }
 }
