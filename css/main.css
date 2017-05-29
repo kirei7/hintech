@@ -13,6 +13,9 @@ section {
 p {
 	font-size: 20px;
 }
+h1 {
+    font-size: 58px;
+}
 .mt-120 {
 	margin-top: 60px;
 	margin-bottom: 60px;
@@ -361,9 +364,6 @@ p {
 #usecases {
     margin: 150px auto;
 }
-#usecases h1 {
-    font-size: 58px
-}
 #usecases .card {
     -webkit-transition: -webkit-transform 0.3s;
     -moz-transition: -moz-transform 0.3s;
@@ -421,10 +421,19 @@ p {
 /*11 section /end*/
 
 /*12 section*/
+#restaurants-slider .card {
+    height: 200px;
+    -webkit-transition: -webkit-transform 0.3s;
+    -moz-transition: -moz-transform 0.3s;
+    -o-transition: -o-transform 0.3s;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
 /*12 section /end*/
 
 footer {
     background: url("../img/back-footer.png") center center no-repeat;
+    margin-top: 100px;
 }
 footer h1{
     font-size: 58px;

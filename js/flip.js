@@ -1,4 +1,5 @@
 $(".card").on("click", function (e) {
+    //$('.flipped').toggleClass('flipped');
     $(e.currentTarget).toggleClass('flipped');
 });
 
