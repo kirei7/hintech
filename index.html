@@ -15,6 +15,8 @@
     <link href="css/horizontal-scroll.css" rel="stylesheet">
 
     <link href="css/kos.css" rel="stylesheet">
+    
+    <link href="css/responsive.css" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
 
@@ -27,7 +29,7 @@
 </head>
 <body>
 <nav class="navbar-fixed-top">
-    <div class="container-fluid">
+    <div id="nav-anchor" class="container-fluid">
         <div class="navbar-header">
             <a href="#">
                 <img alt="Brand" src="img/logo.png">
@@ -35,24 +37,24 @@
         </div>
         <ul class="nav navbar-nav navbar-right">
             <li>
-                <a href="#" class="active">About Us</a>
+                <a href="#topblock">About Us</a>
             </li>
-            <li><a href="#">Technology</a></li>
-            <li><a href="#">Benefits</a></li>
-            <li><a href="#">Inside</a></li>
-            <li><a href="#">Usecases</a></li>
-            <li><a href="#">Restaurants</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="#flipcards">Technology</a></li>
+            <li><a href="#section-4">Benefits</a></li>
+            <li><a href="#section-9">Inside</a></li>
+            <li><a href="#section-11">Usecases</a></li>
+            <li><a href="#restaurants">Restaurants</a></li>
+            <li><a href="#footer">Contact Us</a></li>
         </ul>
     </div>
 </nav>
 
 <!--section1-->
 <section>
-    <div id="player-container">
+    <!--<div id="player-container">
         <div id="player"></div>
         <span id="video-title">The future<br>of dining</span>
-    </div>
+    </div>-->
 </section>
 
 <!--section2-->
@@ -86,8 +88,8 @@
 </section>
 
 <!--section3-->
-<section>
-    <div id="flipcards" class="row text-center">
+<section id="flipcards">
+    <div class="text-center clearfix">
         <div class="flip-container col-md-4">
             <div class="card">
                 <div class="front">
@@ -165,7 +167,14 @@
 </section>
 
 <!--section4-->
-<section class="mt-120">
+<section id="section-4" class="mt-120">
+    <div class="container">
+        <div class="row">
+			<div class="col-md-12">
+                <h1 class="title-heading-left" data-fontsize="58" data-lineheight="69">Benefits</h1>
+            </div>
+        </div>
+    </div>
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -333,7 +342,6 @@
     </div>
 </section>
 
-
 <!--section5-->
 <section class="mt-120">
     <div class="container">
@@ -353,13 +361,20 @@
 
 <!--section7-->
 <section>
-    <div id="protection-player-container">
+    <!--<div id="protection-player-container">
         <div id="protection-player"></div>
-    </div>
+    </div>-->
 </section>
 
 <!--section8-->
 <section>
+    <div class="container">
+        <div class="row">
+			<div class="col-md-12">
+                <h1 class="title-heading-left" data-fontsize="58" data-lineheight="69">Protection</h1>
+            </div>
+        </div>
+    </div>
     <div id="technology">
         <div>
             <div id="technology-multitouch" class="technology-slide">
@@ -488,13 +503,13 @@
 </section>
 
 <!--section9-->
-<section class="mt-120">
+<section id="section-9" class="pt-120">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <h1 class="title-heading-left" data-fontsize="58" data-lineheight="69">Inside</h1>
             </div>
-            <div class="col-md-8 col-md-offset-2">
+            <div class="col-md-12">
                 <div class="inside-slider">
                     <div id="inside-sensor">
                         <div><h1>Touch sensor</h1></div>
@@ -634,7 +649,7 @@
 </section>
 
 <!--section 11-->
-<section>
+<section id="section-11">
     <div id="usecases" class="container">
         <div class="row">
             <div class="col-md-12">
@@ -655,7 +670,7 @@
                             </div>
                         </div>
                     </div>
-                    <div id="usecases-2">
+                    <div id="usecases-2" style="margin-right: 0px;">
                         <div class="card">
                             <div class="front">
                                 <div class="usecases-img-container">
@@ -707,15 +722,21 @@
 </section>
 
 <!--section 12-->
-<section>
-    <h1>Usecases</h1>
+<section id="restaurants">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+    			<h1>Restaurants</h1>
+            </div>
+        </div>
+	</div>
     <div id="restaurants-slider" class="flip-container">
         <div class="card">
             <div class="front">
                 <img src="img/rest-gallery/1.jpg" class="img-responsive">
             </div>
             <div class="back">
-                <h3>restaurant name</h3>
+                <h3>Ebony <span>Dubai, United Arab Emirates</span></h3>
             </div>
         </div>
         <div class="card">
@@ -723,7 +744,7 @@
                 <img src="img/rest-gallery/2.jpg" class="img-responsive">
             </div>
             <div class="back">
-                <h3>restaurant name</h3>
+                <h3>iCafe <span>Abu Dhabi, United Arab Emirates</span></h3>
             </div>
         </div>
         <div class="card">
@@ -731,7 +752,7 @@
                 <img src="img/rest-gallery/3.jpg" class="img-responsive">
             </div>
             <div class="back">
-                <h3>restaurant name</h3>
+                <h3>Neo Bar <span>Vladikavkaz, Russia</span></h3>
             </div>
         </div>
         <div class="card">
@@ -739,7 +760,7 @@
                 <img src="img/rest-gallery/4.jpg" class="img-responsive">
             </div>
             <div class="back">
-                <h3>restaurant name</h3>
+                <h3>Oshi <span>Limassol, Cyprus</span></h3>
             </div>
         </div>
         <div class="card">
@@ -747,7 +768,7 @@
                 <img src="img/rest-gallery/5.jpg" class="img-responsive">
             </div>
             <div class="back">
-                <h3>restaurant name</h3>
+                <h3>Papashon Interactive cafe <span>Lviv, Ukraine</span></h3>
             </div>
         </div>
 
@@ -755,7 +776,7 @@
 </section>
 
 <!--section 13(footer)-->
-<footer>
+<footer id="footer">
     <div class="container">
         <div class="row">
             <div class="col-md-6">
@@ -773,7 +794,7 @@
         </div>
         <div class="row  footer-text">
             <div class="col-md-6 text-left">
-                <span>Copyright 2017 Interactive Restaurant Technology by Kodisoft</span>
+                <span>Copyright 2017 Hinteractive Technology</span>
             </div>
             <div class="col-md-6 text-right">
                 <p>+44 744 248 0582<br>
@@ -786,7 +807,9 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.scrollme.js"></script>
+<script src="js/jquery.scrollTo.js"></script>
+
+<script src="js/nav-scroll.js"></script>
 <script src="js/video.js"></script>
 <script src="js/tabs.js"></script>
 <script src="js/flip.js"></script>

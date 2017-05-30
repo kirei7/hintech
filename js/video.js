@@ -63,7 +63,7 @@ function sizee() {
 
 }
 function sizeeInner(player, container) {
-    var ww = window.innerWidth;
+    var ww = $(document.body).width();
     if (ww > 1200) {
         player.style.width = ww + 'px';
         var height = ww * 720 / 1280 + 'px';

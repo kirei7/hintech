@@ -15,7 +15,7 @@ nav ul.navbar-nav>li>a {
     text-align: center;
     color: black;
 }
-nav ul.nav>li>a:hover, nav ul.nav>li>a.active {
+nav ul.nav>li>a:hover, nav ul.nav>li>a.nav-active {
     background: white;
     border-top: 3px solid #444;
     line-height: 28px;
@@ -26,7 +26,9 @@ nav ul.nav>li>a:focus {
 }
 
 section {
+	position: relative;
 	margin: 0px auto;
+    padding-top: 68px; /*should be the same as nav height*/
 }
 p {
 	font-size: 20px;
@@ -39,7 +41,10 @@ h1 {
 	margin-top: 60px;
 	margin-bottom: 60px;
 }
-
+.pt-120 {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
 /*1 section*/
 #player-container {
     overflow: hidden;
@@ -380,9 +385,6 @@ h1 {
 /*10 section /end*/
 
 /*11 section*/
-#usecases {
-    margin: 150px auto;
-}
 #usecases .card {
     -webkit-transition: -webkit-transform 0.3s;
     -moz-transition: -moz-transform 0.3s;
@@ -413,12 +415,18 @@ h1 {
     margin-top: 230px;
     text-align: center;
 }
-#usecases-1, #usecases-2, #usecases-3, #usecases-4 {
+#usecases-1, #usecases-2{
     margin-bottom: 30px;
     margin-right: 20px;
     height: 500px;
     width: 548px;
-    display: inline-block;
+	float: left;
+    cursor: pointer;
+}
+#usecases-3, #usecases-4 {
+    height: 500px;
+    width: 548px;
+    float: left;
     cursor: pointer;
 }
 /*#usecases-1 {
@@ -443,12 +451,28 @@ h1 {
 
 /*12 section*/
 #restaurants-slider .card {
-    height: 200px;
+    height: 425px;
     -webkit-transition: -webkit-transform 0.3s;
     -moz-transition: -moz-transform 0.3s;
     -o-transition: -o-transform 0.3s;
     transition: transform 0.3s;
     cursor: pointer;
+}
+#restaurants-slider .card img {
+    height: 100%;
+}
+#restaurants-slider .card .back{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+	background-color: aliceblue;
+}
+#restaurants-slider .card .back h3 {
+	text-align: center;
+}
+#restaurants-slider .card .back h3 span {
+	display:block;
 }
 /*12 section /end*/
 
@@ -501,4 +525,40 @@ footer form input[type="submit"] {
 }
 .footer-text p {
     line-height: 1;
+}
+#section-4:before {
+	content: '';
+    background-image: url(../img/baccker-lr.png);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    width: 134px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+#section-4:after {
+	content: '';
+    background-image: url(../img/baccker-rl.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    width: 134px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+#section-9 {
+    background-image: url(../img/baccker-r.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#section-11 {
+    background-image: url(../img/baccker-l.png);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
