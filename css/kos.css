@@ -119,28 +119,28 @@ div.tab button {
 div.tab button.tablinks {
     background-color: transparent!important;
 }
-.color-1, div.tab button.color-1.active{
+.color-1, div.tab button.color-1.active, #headingOne  a{
 	background-color: #b9bbbe!important;
 }
-.color-2, div.tab button.color-2.active {
+.color-2, div.tab button.color-2.active, #headingTwo  a{
 	background-color: #e8666a!important
 }
-.color-3, div.tab button.color-3.active {
+.color-3, div.tab button.color-3.active, #headingThree  a {
 	background-color: #52aec1!important;
 }
-.color-4, div.tab button.color-4.active {
+.color-4, div.tab button.color-4.active, #headingFour  a {
 	background-color: #41b57c!important;
 }
-.color-5, div.tab button.color-5.active {
+.color-5, div.tab button.color-5.active, #headingFive  a {
 	background-color: #f1bb39!important;
 }
-.color-6, div.tab button.color-6.active {
+.color-6, div.tab button.color-6.active, #headingSix  a {
 	background-color: #bb6185!important;
 }
-.color-7, div.tab button.color-7.active {
+.color-7, div.tab button.color-7.active, #headingSeven  a {
 	background-color: #3f79a9!important;
 }
-.color-8, div.tab button.color-8.active {
+.color-8, div.tab button.color-8.active, #headingEight  a {
 	background-color: #55c7ae!important;
 }
 .tabcontent.color-1 {
