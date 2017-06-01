@@ -323,6 +323,20 @@ h1:after {
     margin-top: 30px;
     height: 533px;
 }
+#weight-and-dimensions {
+    background: url(../img/inside/wad-img1.png) top right no-repeat;
+    background-size: contain;
+    color: #747474;
+    margin-top: 30px;
+    height: 530px;
+}
+#weight-and-dimensions>div {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+#weight-and-dimensions b {
+    color: black;
+}
 #inside-hardware li {
     border-top: 1px solid #ebebeb;
 }
@@ -343,6 +357,9 @@ h1:after {
     overflow: hidden;
     position: relative;
     width: 100%;
+}
+.slick-slider {
+	z-index: 2;
 }
 .slick-slider *:focus {
     outline: none;
@@ -475,12 +492,15 @@ h1:after {
     background-color: #eaeaea;
 }
 #usecases .back {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     background-color: rgb(59, 63, 66);
     color: white;
     padding: 20px;
 }
 #usecases .back p {
-    margin-top: 230px;
     text-align: center;
 }
 #usecases-1, #usecases-2{
@@ -518,7 +538,7 @@ h1:after {
 
 /*12 section*/
 #restaurants-slider .card {
-    height: 425px;
+    /*height: 425px;*/
     -webkit-transition: -webkit-transform 0.3s;
     -moz-transition: -moz-transform 0.3s;
     -o-transition: -o-transform 0.3s;
@@ -526,6 +546,7 @@ h1:after {
     cursor: pointer;
 }
 #restaurants-slider .card img {
+	width: 100%;
     height: 100%;
 }
 #restaurants-slider .card .back{
@@ -550,21 +571,20 @@ footer {
 footer h1{
     font-size: 50px;
 }
-footer form input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+footer form input::-webkit-input-placeholder, footer form textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     color: #cccccc;
 }
-footer form input::-moz-placeholder { /* Firefox 19+ */
+footer form input::-moz-placeholder, footer form textarea::-moz-placeholder { /* Firefox 19+ */
     color: #cccccc;
 }
-footer form input:-ms-input-placeholder { /* IE 10+ */
+footer form input:-ms-input-placeholder, footer form textarea:-ms-input-placeholder { /* IE 10+ */
     color: #cccccc;
 }
-footer form input:-moz-placeholder { /* Firefox 18- */
+footer form input:-moz-placeholder, footer form textarea:-moz-placeholder { /* Firefox 18- */
     color: #cccccc;
-} {
+} 
 
-}
-footer form input {
+footer form input, footer form textarea {
     display: block;
     width: 100%;
     height: 53px;
@@ -617,12 +637,39 @@ footer form input[type="submit"] {
     right: 0;
     top: 0;
 }
-#section-6:before {
+#section-5 {
+	padding: 55px 0;
+}
+#section-5:before {
 	content: '';
     background-image: url(../img/baccker-180-rl.png);
     background-position: left bottom;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    height: 100%;
+    width: 190px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+#section-5:after {
+	content: '';
+    background-image: url(../img/baccker-180-lr.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    width: 190px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+#section-6:before {
+	content: '';
+    background-image: url(../img/baccker-lr-long.png);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
     height: 100%;
     width: 190px;
     position: absolute;
@@ -631,10 +678,10 @@ footer form input[type="submit"] {
 }
 #section-6:after {
 	content: '';
-    background-image: url(../img/baccker-180-lr.png);
+    background-image: url(../img/baccker-rl-long.png);
     background-position: right bottom;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     height: 100%;
     width: 190px;
     position: absolute;

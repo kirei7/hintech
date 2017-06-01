@@ -120,68 +120,84 @@ div.tab button.tablinks {
     background-color: transparent!important;
 }
 .color-1, div.tab button.color-1.active, #headingOne  a{
-	background-color: #b9bbbe!important;
+	background-color: #0060b2!important;
 }
 .color-2, div.tab button.color-2.active, #headingTwo  a{
-	background-color: #e8666a!important
+	background-color: #0060b2!important
 }
 .color-3, div.tab button.color-3.active, #headingThree  a {
-	background-color: #52aec1!important;
+	background-color: #0060b2!important;
 }
 .color-4, div.tab button.color-4.active, #headingFour  a {
-	background-color: #41b57c!important;
+	background-color: #0060b2!important;
 }
 .color-5, div.tab button.color-5.active, #headingFive  a {
-	background-color: #f1bb39!important;
+	background-color: #0060b2!important;
 }
 .color-6, div.tab button.color-6.active, #headingSix  a {
-	background-color: #bb6185!important;
+	background-color: #0060b2!important;
 }
 .color-7, div.tab button.color-7.active, #headingSeven  a {
-	background-color: #3f79a9!important;
+	background-color: #0060b2!important;
 }
 .color-8, div.tab button.color-8.active, #headingEight  a {
-	background-color: #55c7ae!important;
+	background-color: #0060b2!important;
 }
-.tabcontent.color-1 {
-	background-image: url(../img/b-rise.png);
-	background-color: #b9bbbe;
-	background-size: cover;
+.tabcontent.color-1, .panel-body.color-1 {
+	background-image: url(../img/b-rise-2.png);
+	background-color: transparent!important;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
 }
-.tabcontent.color-2 {
-	background-image: url(../img/b-become-2.png);
-	background-color: #efefef!important;
-	background-size: cover;
+.tabcontent.color-2, .panel-body.color-2 {
+	background-image: url(../img/b-become-4.png);
+	background-color: transparent!important;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
 }
-.tabcontent.color-3 {
-	background-image: url(../img/b-social-2.png);
-	background-color: #efefef!important;
-	background-size: cover;
+.tabcontent.color-3, .panel-body.color-3 {
+	background-image: url(../img/b-social-3.png);
+	background-color: transparent!important;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
 }
-.tabcontent.color-4 {
-	background-image: url(../img/b-service.png);
-	background-color: #efefef!important;
-	background-size: cover;
+.tabcontent.color-4, .panel-body.color-4 {
+	background-image: url(../img/b-service-2.png);
+	background-color: transparent!important;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
 }
-.tabcontent.color-5 {
-	background-image: url(../img/b-more-2.png);
-	background-color: #fff!important;
-	background-size: cover;
+.tabcontent.color-5, .panel-body.color-5 {
+	background-image: url(../img/b-more-5.png);
+	background-color: transparent!important;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
 }
-.tabcontent.color-6 {
-	background-image: url(../img/b-more.png);
-	background-color: #efefef!important;
-	background-size: cover;
+.tabcontent.color-6, .panel-body.color-6 {
+	background-image: url(../img/b-more-22.png);
+	background-color: transparent!important;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
 }
-.tabcontent.color-7 {
-	background-image: url(../img/b-command.png);
-	background-color: #efefef!important;
-	background-size: cover;
+.tabcontent.color-7, .panel-body.color-7 {
+	background-image: url(../img/b-command-2.png);
+	background-color: transparent!important;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
 }
-.tabcontent.color-8 {
-	background-image: url(../img/b-return.png);
-	background-color: #efefef!important;
-	background-size: cover;
+.tabcontent.color-8, .panel-body.color-8 {
+	background-image: url(../img/b-return-2.png);
+	background-color: transparent!important;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 .tabcontent {
 	padding: 0px 30px;

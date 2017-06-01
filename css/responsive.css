@@ -2,7 +2,7 @@
 /* CSS Document */
 
 
-@media screen and (max-width: 1170px) {
+@media screen and (max-width: 1200px) {
 	p {
 		font-size: 16px;
 	}
@@ -44,7 +44,7 @@
 		cursor: pointer;
 	}
 	#restaurants-slider .card {
-		height: 225px;
+		/* height: 225px; */
 	}
 	#protection-player-container {
 		margin: 60px 0;
@@ -97,6 +97,13 @@
 	h1 {
 		font-size: 38px;
 	}
+	#video-title {
+		font-size: 84px;
+		line-height: 90px;
+	}
+	.slick-arrow {
+		display: none;
+	}
 	footer h1 {
 		font-size: 38px;
 	}
@@ -112,7 +119,13 @@
 		padding-top: 49px;
 		padding-bottom: 80px;
 	}
-	#section-6:before, #section-6:after {
+	.technology-slide {
+		padding: 50px 40px 0 40px;
+	}
+	#section-5 {
+    padding: 55px 0 10px 0;
+	}
+	#section-6:before, #section-6:after, #section-5:before, #section-5:after {
 		display: none;
 	}
 	.technology-text h2 {
@@ -125,7 +138,7 @@
 	.technology-text p:first-child {
 		margin-bottom: 10px;
 	}
-	#inside-sensor, #inside-hardware {
+	#inside-sensor, #inside-hardware, #weight-and-dimensions {
 		background: transparent;
 	}
 	#usecases-1, #usecases-2, #usecases-3, #usecases-4 {

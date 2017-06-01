@@ -30,6 +30,10 @@
     backface-visibility: hidden;
 }
 .card .front {
+	position: relative;
+}
+.card.flipped .front {
+	position: absolute;
 }
 .card .back {
     -webkit-transform: rotateY( 180deg );

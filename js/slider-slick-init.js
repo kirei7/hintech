@@ -10,11 +10,16 @@ $(document).ready(function () {
         autoplay: true,
         autoplaySpeed: 7000
     });
+    $('#operations').slick({
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 7000
+    });
     $('#restaurants-slider').slick({
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 1,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 7000
     });
     $('#slider-10-container').slick({

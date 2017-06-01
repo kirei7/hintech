@@ -19,7 +19,7 @@ div.tab button {
     border-radius: 10px 0 0 10px;
 
 
-    border-right: 1px solid #ccc;
+    border-right: 0px solid #ccc;
 }
 
 /* Change background color of buttons on hover */
@@ -37,7 +37,7 @@ div.tab button.active {
 .tabcontent {
     float: left;
     padding: 0px 12px;
-    border: 1px solid #ccc;
+    border: 0px solid #ccc;
     border-left: none;
     border-right: none;
     width: 70%;
