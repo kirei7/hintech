@@ -1,23 +1,25 @@
 $(document).ready(function () {
     //initialize sliders
     $('.inside-slider').slick({
-        fade: true,
+        fade: false,
         autoplay: true,
-        accessibility: false,
-        arrows: false,
-        draggable: false
+        autoplaySpeed: 7000
     });
     $('#technology').slick({
-        autoplay: false,
-        infinite: false
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 7000
     });
     $('#restaurants-slider').slick({
         infinite: true,
         slidesToShow: 3,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 7000
     });
     $('#slider-10-container').slick({
-
+        autoplay: true,
+        autoplaySpeed: 7000
     });
     //initialize sliders /end
 

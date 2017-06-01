@@ -9,14 +9,16 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <link href="css/main.css" rel="stylesheet">
+    <link href="css/main.css?ver=1.1" rel="stylesheet">
+    <link href="css/pulse-animation.css" rel="stylesheet">
+    <link href="css/fonts.css" rel="stylesheet">
     <link href="css/flip.css" rel="stylesheet">
     <link href="css/tabs.css" rel="stylesheet">
     <link href="css/horizontal-scroll.css" rel="stylesheet">
 
     <link href="css/kos.css" rel="stylesheet">
     
-    <link href="css/responsive.css" rel="stylesheet">
+    <link href="css/responsive.css?ver=1.1" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
 
@@ -29,18 +31,57 @@
 </head>
 <body>
 <nav class="navbar-fixed-top">
+	<div class="container-fluid">
+		<div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand">
+                <img alt="Brand" src="img/logo.png">
+                <span style="margin-left: 20px;">Hinteractive technology</span>
+            </a>
+		</div>
+		<div id="navbar" class="navbar-collapse collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#topblock">About Us</a></li>
+				<li><a href="#section-4">Benefits</a></li>
+				<li><a href="#brave-new">Operations</a></li>
+				<li><a href="#section-8">Technology</a></li>
+				<li><a href="#section-9">Inside</a></li>
+				<li><a href="#section-11">Usecases</a></li>
+				<li><a href="#restaurants">Restaurants</a></li>
+				<li><a href="#footer">Contact Us</a></li>
+            </ul>
+		</div><!--/.nav-collapse -->
+	</div><!--/.container-fluid -->
+</nav>
+
+
+<nav class="navbar-fixed-top" style="display: none">
     <div id="nav-anchor" class="container-fluid">
         <div class="navbar-header">
             <a href="#">
                 <img alt="Brand" src="img/logo.png">
+                <span style="margin-left: 20px;">Hinteractive technology</span>
             </a>
         </div>
+		<div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Project name</a>
+        </div>
         <ul class="nav navbar-nav navbar-right">
-            <li>
-                <a href="#topblock">About Us</a>
-            </li>
-            <li><a href="#flipcards">Technology</a></li>
+            <li><a href="#topblock">About Us</a></li>
             <li><a href="#section-4">Benefits</a></li>
+            <li><a href="#brave-new">Operations</a></li>
+			<li><a href="#section-8">Technology</a></li>
             <li><a href="#section-9">Inside</a></li>
             <li><a href="#section-11">Usecases</a></li>
             <li><a href="#restaurants">Restaurants</a></li>
@@ -51,10 +92,10 @@
 
 <!--section1-->
 <section>
-    <!--<div id="player-container">
+    <div id="player-container">
         <div id="player"></div>
         <span id="video-title">The future<br>of dining</span>
-    </div>-->
+    </div>
 </section>
 
 <!--section2-->
@@ -77,10 +118,10 @@
                     <img src="img/table2.png" class="img-responsive">
                 </div>
                 <div id="menu-abs">
-                    <a href="#" id="menu-abs-button-1"></a>
-                    <a href="#" id="menu-abs-button-2"></a>
-                    <a href="#" id="menu-abs-button-3"></a>
-                    <a href="#" id="menu-abs-button-4"></a>
+					<a href="#" id="menu-abs-button-1"><div class="animation-pulse"></div></a>
+					<a href="#" id="menu-abs-button-2"><div class="animation-pulse"></div></a>
+					<a href="#" id="menu-abs-button-3"><div class="animation-pulse"></div></a>
+					<a href="#" id="menu-abs-button-4"><div class="animation-pulse"></div></a>
                 </div>
             </div>
         </div>
@@ -94,7 +135,7 @@
             <div class="card">
                 <div class="front">
                     <small>01.</small>
-                    <h1>Double your profit</h1>
+                    <h2>Double your profit</h2>
                     <img src="img/benefits/benefits01.png" class="img-responsive center-block">
                 </div>
                 <div class="back">
@@ -119,7 +160,7 @@
             <div class="card">
                 <div class="front">
                     <small>02.</small>
-                    <h1>Slash your cost</h1>
+                    <h2>Slash your cost</h2>
                     <img src="img/benefits/benefits02.png" class="img-responsive center-block">
                 </div>
                 <div class="back">
@@ -143,7 +184,7 @@
             <div class="card">
                 <div class="front">
                     <small>03.</small>
-                    <h1>Take full control</h1>
+                    <h2>Take full control</h2>
                     <img src="img/benefits/benefits03.png" class="img-responsive center-block">
                 </div>
                 <div class="back">
@@ -167,7 +208,7 @@
 </section>
 
 <!--section4-->
-<section id="section-4" class="mt-120">
+<section id="section-4">
     <div class="container">
         <div class="row">
 			<div class="col-md-12">
@@ -335,23 +376,27 @@
 </section>
 
 <!--THE BRAVE NEW RESTAURANT OPERATION-->
-<section id="brave-new" class="mt-120">
+<section id="brave-new">
     <div class="text-center">
         <h1>The brave new restaurant operation</h1>
-        <img src="img/os-main1.gif">
+        <img src="img/os-main1.gif" style="display: none;">
     </div>
 </section>
 
 <!--section5-->
-<section class="mt-120">
+<section id="section-6" class="pt-120">
     <div class="container">
         <div class="row">
+            <div id="analitics-text" class="col-md-12 text-center">
+            	<span class="op-icon"></span>
+                <p>Come experience a brand new Command Centre for everything that your guest requires for an exciting new dining experience! And the powerful yet simple software puts all the control in your hand at the touch of your fingertips.</p>           
+   			</div>
             <div id="analitics" class="col-md-12">
                 <div id="analitics-wrap" class="center-block">
                     <img src="img/horizontal-scroll/analytics.jpg">
                 </div>
             </div>
-            <div class="col-md-8 col-md-offset-2 text-center">
+            <div class="col-md-8 col-md-offset-2 text-center zindex2">
                 <input id="horizontal-slider" type="range" min="0" max="1000" value="0"
                        oninput="horizontalScroll(this.value)" onchange="horizontalScroll(this.value)">
             </div>
@@ -361,13 +406,7 @@
 
 <!--section7-->
 <section>
-    <!--<div id="protection-player-container">
-        <div id="protection-player"></div>
-    </div>-->
-</section>
-
-<!--section8-->
-<section>
+   <!--
     <div class="container">
         <div class="row">
 			<div class="col-md-12">
@@ -375,6 +414,15 @@
             </div>
         </div>
     </div>
+    -->
+    <div id="protection-player-container">
+        <div id="protection-player"></div>
+    </div>
+</section>
+
+
+<!--section8-->
+<section id="section-8">
     <div id="technology">
         <div>
             <div id="technology-multitouch" class="technology-slide">
@@ -382,7 +430,7 @@
                     <div class="col-md-5">
                         <div class="technology-text">
                             <p>Technology</p>
-                            <h1>Unlimited Multi-Touch surface</h1>
+                            <h2>Unlimited Multi-Touch surface</h2>
                             <p>The unique Touch Technology supports an unlimited number
                                 of touches. It will perform flawlessly even when every
                                 guest sitting at the table is enthusiastically exploring
@@ -390,7 +438,7 @@
                                 the enjoyment of IRT technology without limits.</p>
                         </div>
                     </div>
-                    <div class="col-md-7">
+                    <div class="col-md-7 hidden-xs">
                         <img src="img/technology/technology-img1.jpg" class="img-responsive center-block">
                     </div>
                 </div>
@@ -399,13 +447,13 @@
         <div>
             <div id="technology-recognition" class="technology-slide">
                 <div class="row">
-                    <div class="col-md-7">
+                    <div class="col-md-7 hidden-xs">
                         <img src="img/technology/hands.png" class="img-responsive center-block">
                     </div>
                     <div class="col-md-5">
                         <div class="technology-text">
                             <p>Technology</p>
-                            <h1>Instant Hand/Object Recognition</h1>
+                            <h2>Instant Hand/Object Recognition</h2>
                             <p>Touch Technology instantly distinguishes the subtle
                                 differences between every hand and object placed on the
                                 tabletop, and then effortlessly delivers the most innovative
@@ -421,7 +469,7 @@
                     <div class="col-md-5">
                         <div class="technology-text">
                             <p>Display</p>
-                            <h1>4x more pixels</h1>
+                            <h2>4x more pixels</h2>
                             <p>4K resolution is effectively four times sharper than that of Full HD,
                                 so you'll see the picture, not the pixels, even up close. The first
                                 time you experience the screen, you might not believe your eyes.
@@ -431,7 +479,7 @@
                             <p><b>Interactive Table</b> - <span>4K Ultra HD 3840x2160px</span></p>
                         </div>
                     </div>
-                    <div class="col-md-7">
+                    <div class="col-md-7 hidden-xs">
                         <img src="img/technology/display-img2.jpg" class="img-responsive center-block">
                     </div>
                 </div>
@@ -440,13 +488,13 @@
         <div>
             <div id="technology-payment" class="technology-slide">
                 <div class="row">
-                    <div class="col-md-7">
+                    <div class="col-md-7 hidden-xs">
                         <img src="img/technology/more-img1.png" class="img-responsive center-block">
                     </div>
                     <div class="col-md-5">
                         <div class="technology-text">
                             <p>Additional features</p>
-                            <h1>A range of payment options</h1>
+                            <h2>A range of payment options</h2>
                             <p>
                                 IRT will change how customers pay with breakthrough contact-less payment
                                 technology (or credit card), with our unique security features built right
@@ -464,7 +512,7 @@
                     <div class="col-md-5">
                         <div class="technology-text">
                             <p>Additional features</p>
-                            <h1>A personal invitation</h1>
+                            <h2>A personal invitation</h2>
                             <p>
                                 Use NFC, mobile apps, or a QR code for easy access to your customer
                                 account and instantly receive discounts and Facebook data, or simply
@@ -472,7 +520,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-md-7">
+                    <div class="col-md-7 hidden-xs">
                         <img src="img/technology/more-img2.jpg" class="img-responsive center-block">
                     </div>
                 </div>
@@ -481,13 +529,13 @@
         <div>
             <div id="technology-cameras" class="technology-slide">
                 <div class="row">
-                    <div class="col-md-7">
+                    <div class="col-md-7 hidden-xs">
                         <img src="img/technology/more-img3.jpg" class="img-responsive center-block">
                     </div>
                     <div class="col-md-5">
                         <div class="technology-text">
                             <p>Additional features</p>
-                            <h1>Amazing cameras for everyone</h1>
+                            <h2>Amazing cameras for everyone</h2>
                             <p>
                                 Smile! With four built-in high quality cameras, customers will be able
                                 to clearly see each other on the table display, do video conferences
@@ -512,7 +560,7 @@
             <div class="col-md-12">
                 <div class="inside-slider">
                     <div id="inside-sensor">
-                        <div><h1>Touch sensor</h1></div>
+                        <div><h2>Touch sensor</h2></div>
                         <div><b>8 mm’s of</b> Diamond glass</div>
                         <div><b>Gesture</b> sensor</div>
                         <div><b>Unlimited</b> Multi-Touch sensor</div>
@@ -559,7 +607,7 @@
             <div id="slider-10-container">
                 <div> <!--just wrapper, inside which we can apply styles for each slide-->
                     <div id="slider-10-benefits" class="slider-10-content">
-                        <h1 class="text-center">BENEFITS FOR THE MALL</h1>
+                        <h2 class="text-center">BENEFITS FOR THE MALL</h2>
                         <ul>
                             <li>Taking additional income from food court area</li>
                             <li>Creating new communication channel between visitors and tenants</li>
@@ -575,7 +623,7 @@
                 </div>
                 <div>
                     <div id="slider-10-performance" class="slider-10-content">
-                        <h1 class="text-center">PERFORMANCE DATA</h1>
+                        <h2 class="text-center">PERFORMANCE DATA</h2>
                         <p><b>200 TABLES</b> - average size</p>
                         <p><b>1200 SQ.M</b> - average area</p>
                         <p><b>3,000,000</b> - number of people served in one year</p>
@@ -587,7 +635,7 @@
                 </div>
                 <div>
                     <div id="slider-10-income" class="slider-10-content">
-                        <h1 class="text-center">INCOME CHANNELS</h1>
+                        <h2 class="text-center">INCOME CHANNELS</h2>
                         <div>
                             <div class="column">
                                 <b>ADVERTISING REVENUE</b>
@@ -788,7 +836,7 @@
                 </form>
 
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 hidden-xs">
                 <img src="img/table3.png" class="img-responsive">
             </div>
         </div>
@@ -807,7 +855,7 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.scrollTo.js"></script>
+<script src="js/jquery.scrollto.js"></script>
 
 <script src="js/nav-scroll.js"></script>
 <script src="js/video.js"></script>

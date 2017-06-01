@@ -8,8 +8,14 @@
     src: url("../fonts/raleway/Raleway-Medium.ttf");
 }
 @font-face {
-    font-family: "Raleway-light";
+    font-family: "Raleway-lig<strong></strong>ht";
     src: url("../fonts/raleway/Raleway-ExtraLight.ttf");
 }
+@font-face { font-family: "Unit-Regular"; src: url("../fonts/Unit-Regular.eot"); src: url("../fonts/Unit-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Unit-Regular.woff2") format("woff2"), url("../fonts/Unit-Regular.woff") format("woff"), url("../fonts/Unit-Regular.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 
+@font-face { font-family: "UnitSlabOffcPro-Bold"; src: url("../fonts/UnitSlabOffcPro-Bold.eot"); src: url("../fonts/UnitSlabOffcPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/UnitSlabOffcPro-Bold.woff2") format("woff2"), url("../fonts/UnitSlabOffcPro-Bold.woff") format("woff"), url("../fonts/UnitSlabOffcPro-Bold.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: "UnitSlabOffcPro"; src: url("../fonts/UnitSlabOffcPro.eot"); src: url("../fonts/UnitSlabOffcPro.eot?#iefix") format("embedded-opentype"), url("../fonts/UnitSlabOffcPro.woff2") format("woff2"), url("../fonts/UnitSlabOffcPro.woff") format("woff"), url("../fonts/UnitSlabOffcPro.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: "UnitSlabOffcPro-Medium"; src: url("../fonts/UnitSlabOffcPro-Medium.eot"); src: url("../fonts/UnitSlabOffcPro-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/UnitSlabOffcPro-Medium.woff2") format("woff2"), url("../fonts/UnitSlabOffcPro-Medium.woff") format("woff"), url("../fonts/UnitSlabOffcPro-Medium.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 /*Fonts /end*/

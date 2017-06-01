@@ -21,7 +21,8 @@ $(document).ready(function(){
      */
     $("nav a").click(function(evn){
         evn.preventDefault();
-        $('html,body').scrollTo(this.hash, this.hash);
+        console.log(this.hash);
+        $('html,body').scrollTo(this.hash, this.hash, {offset: -68});
     });
 
     /**
