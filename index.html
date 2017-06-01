@@ -118,10 +118,10 @@
                     <img src="img/table2.png" class="img-responsive">
                 </div>
                 <div id="menu-abs">
-					<a href="#" id="menu-abs-button-1"><div class="animation-pulse"></div></a>
-					<a href="#" id="menu-abs-button-2"><div class="animation-pulse"></div></a>
-					<a href="#" id="menu-abs-button-3"><div class="animation-pulse"></div></a>
-					<a href="#" id="menu-abs-button-4"><div class="animation-pulse"></div></a>
+					<a data-toggle="tooltip" data-placement="top" title="Icon1 tooltip" href="#" id="menu-abs-button-1"><div class="animation-pulse"></div></a>
+					<a data-toggle="tooltip" data-placement="top" title="Icon2 tooltip" href="#" id="menu-abs-button-2"><div class="animation-pulse"></div></a>
+					<a data-toggle="tooltip" data-placement="top" title="Icon3 tooltip" href="#" id="menu-abs-button-3"><div class="animation-pulse"></div></a>
+					<a data-toggle="tooltip" data-placement="top" title="Icon4 tooltip" href="#" id="menu-abs-button-4"><div class="animation-pulse"></div></a>
                 </div>
             </div>
         </div>
@@ -995,6 +995,13 @@
 <script type="text/javascript" src="js/slick/slick.min.js"></script>
 
 <script src="js/slider-slick-init.js"></script>
+
+<!--initilize tooltips-->
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+</script>
 
 </body>
 </html>
