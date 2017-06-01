@@ -1,4 +1,4 @@
-#menu-abs a:hover .animation-pulse {
+#menu-abs div:hover .animation-pulse {
     position: absolute;
     width: 150%;
     height: 150%;

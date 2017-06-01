@@ -78,7 +78,7 @@ div.tab button {
 #video-title {
 	font-size: 124px;
 }
-#menu-abs a:hover{
+#menu-abs div:hover button{
     transition: background .3s;
     -webkit-transform: scale(.93);
     -ms-transform: scale(.93);

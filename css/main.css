@@ -103,33 +103,61 @@ h1:after {
     font-size: 66px;
 }
 
-#menu-abs a {
+#menu-abs div {
+    cursor: pointer;
+}
+#menu-abs button {
     display: inline-block;
-    background-position: center center;
-    background-repeat: no-repeat;
+    background: no-repeat center center;
+    width: 100%;
+    height: 100%;
+    border: none;
+    pointer-events: none;
+}
+
+#menu-abs-button-1 {
+    left: 2%;
+    bottom: 10%;
+    display: inline-block;
     width: 41px;
     height: 41px;
     position: absolute;
 }
-#menu-abs-button-1 {
+#menu-abs-button-1 button {
     background-image: url("../img/menu-abs/ic1.png");
-    left: 2%;
-    bottom: 10%;
 }
 #menu-abs-button-2 {
-    background-image: url("../img/menu-abs/ic2.png");
     left: 18%;
     bottom: 0;
+    display: inline-block;
+    width: 41px;
+    height: 41px;
+    position: absolute;
+}
+#menu-abs-button-2 button {
+    background-image: url("../img/menu-abs/ic2.png");
 }
 #menu-abs-button-3 {
-    background-image: url("../img/menu-abs/ic3.png");
     left: 36%;
     bottom: -6%;
+    display: inline-block;
+    width: 41px;
+    height: 41px;
+    position: absolute;
+}
+#menu-abs-button-3 button {
+    background-image: url("../img/menu-abs/ic3.png");
 }
 #menu-abs-button-4 {
-    background-image: url("../img/menu-abs/ic4.png");
     left: 56%;
     bottom: -8%;
+    display: inline-block;
+    width: 41px;
+    height: 41px;
+    position: absolute;
+}
+#menu-abs-button-4 button {
+    background-image: url("../img/menu-abs/ic4.png");
 }
 #topblock-button {
     color: white;
