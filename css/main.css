@@ -187,14 +187,15 @@ h1:after {
 #flipcards .flip-container {
     padding: 0 !important;
     cursor: pointer;
+}
+#flipcards .flip-container .back, #flipcards .flip-container .front {
     background-color: #f9f9f9;
     transition: color 0.3s, background-color 0.3s;
 }
-#flipcards .flip-container .back {
-    background-color: #f9f9f9; /*same as #flipcards .flip-container */
-}
-#flipcards .flip-container:hover, #flipcards .flip-container:hover .back {
+#flipcards .flip-container:hover /*#flipcards .flip-container:hover .back*/ {
     color: white;
+}
+#flipcards .flip-container:hover .front, #flipcards .flip-container:hover .back {
     background-color: #f41b22;
 }
 #flipcards .card {
@@ -203,17 +204,17 @@ h1:after {
 #flipcards .card>div {
     padding: 30px;
 }
-#flipcards .flip-container:first-child,
+#flipcards .flip-container:first-child .front,
 #flipcards .flip-container:first-child .back,
-#flipcards .flip-container:last-child,
+#flipcards .flip-container:last-child .front,
 #flipcards .flip-container:last-child .back {
     background-color: #eef0f1;
 }
-#flipcards .flip-container:first-child:hover,
+#flipcards .flip-container:first-child:hover .front,
 #flipcards .flip-container:first-child:hover .back {
     background-color: #b9bbbe;
 }
-#flipcards .flip-container:last-child:hover,
+#flipcards .flip-container:last-child:hover .front,
 #flipcards .flip-container:last-child:hover .back {
     background-color: #00d1fe;
 }
