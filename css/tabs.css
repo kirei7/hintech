@@ -1,10 +1,7 @@
 /* Style the tab */
 div.tab {
     float: left;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
     width: 30%;
-    height: 300px;
 }
 
 /* Style the buttons inside the tab */
@@ -18,26 +15,58 @@ div.tab button {
     outline: none;
     text-align: left;
     cursor: pointer;
-    transition: 0.3s;
     font-size: 17px;
+    border-radius: 10px 0 0 10px;
+
+
+    border-right: 0px solid #ccc;
 }
 
 /* Change background color of buttons on hover */
-div.tab button:hover {
+/*div.tab button:hover {
     background-color: #ddd;
-}
+}*/
 
 /* Create an active/current "tab button" class */
 div.tab button.active {
-    background-color: #ccc;
+    border: 1px solid #ccc;
+    border-right: none;
 }
 
 /* Style the tab content */
 .tabcontent {
     float: left;
     padding: 0px 12px;
-    border: 1px solid #ccc;
+    border: 0px solid #ccc;
+    border-left: none;
+    border-right: none;
     width: 70%;
     border-left: none;
-    height: 300px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.panel-heading a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    padding: 10px 15px;
+}
+.panel-heading {
+    padding: 0;
+}
+#benefits-panels a.collapsed {
+    background-color: #f5f5f5 !important;
+}
+#benefits-panels a:focus {
+    text-decoration: none;
+}
+#benefits-panels a.collapsed:hover, a.collapsed:focus {
+    background-color: #cfcfcf !important;
+    text-decoration: none;
+}
+.panel-collapse.collapsing {
+    color: black;
 }

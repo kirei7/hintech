@@ -9,10 +9,18 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <link href="css/main.css" rel="stylesheet">
+    <link href="css/main.css?ver=1.1" rel="stylesheet">
+    <link href="css/pulse-animation.css" rel="stylesheet">
+    <link href="css/fonts.css" rel="stylesheet">
     <link href="css/flip.css" rel="stylesheet">
     <link href="css/tabs.css" rel="stylesheet">
     <link href="css/horizontal-scroll.css" rel="stylesheet">
+
+    <link href="css/kos.css" rel="stylesheet">
+    
+    <link href="css/responsive.css?ver=1.1" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -22,13 +30,72 @@
     <![endif]-->
 </head>
 <body>
+<nav class="navbar-fixed-top">
+	<div class="container-fluid">
+		<div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand">
+                <img alt="Brand" src="img/logo.png">
+                <span style="margin-left: 20px;">Hinteractive technology</span>
+            </a>
+		</div>
+		<div id="navbar" class="navbar-collapse collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#topblock">About Us</a></li>
+				<li><a href="#section-4">Benefits</a></li>
+				<li><a href="#brave-new">Operations</a></li>
+				<li><a href="#section-8">Technology</a></li>
+				<li><a href="#section-9">Inside</a></li>
+				<li><a href="#section-11">Usecases</a></li>
+				<li><a href="#restaurants">Restaurants</a></li>
+				<li><a href="#footer">Contact Us</a></li>
+            </ul>
+		</div><!--/.nav-collapse -->
+	</div><!--/.container-fluid -->
+</nav>
+
+
+<nav class="navbar-fixed-top" style="display: none">
+    <div id="nav-anchor" class="container-fluid">
+        <div class="navbar-header">
+            <a href="#">
+                <img alt="Brand" src="img/logo.png">
+                <span style="margin-left: 20px;">Hinteractive technology</span>
+            </a>
+        </div>
+		<div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Project name</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#topblock">About Us</a></li>
+            <li><a href="#section-4">Benefits</a></li>
+            <li><a href="#brave-new">Operations</a></li>
+			<li><a href="#section-8">Technology</a></li>
+            <li><a href="#section-9">Inside</a></li>
+            <li><a href="#section-11">Usecases</a></li>
+            <li><a href="#restaurants">Restaurants</a></li>
+            <li><a href="#footer">Contact Us</a></li>
+        </ul>
+    </div>
+</nav>
 
 <!--section1-->
 <section>
-    <!--<div id="player-container">
+    <div id="player-container">
         <div id="player"></div>
         <span id="video-title">The future<br>of dining</span>
-    </div>-->
+    </div>
 </section>
 
 <!--section2-->
@@ -45,17 +112,16 @@
                     solutions.</p>
                 <p>Our vision is to inspire people from all over the world to join common desire of creating a new era,
                     improved, easily adapted for the needs of people, modern businesses and governmental forms.</p>
-                <a href="#" id="topblock-button">SEND INQUIRY</a>
             </div>
             <div class="col-md-5">
                 <div>
                     <img src="img/table2.png" class="img-responsive">
                 </div>
                 <div id="menu-abs">
-                    <a href="#" id="menu-abs-button-1"></a>
-                    <a href="#" id="menu-abs-button-2"></a>
-                    <a href="#" id="menu-abs-button-3"></a>
-                    <a href="#" id="menu-abs-button-4"></a>
+					<div data-toggle="tooltip" data-placement="top" title="4K Retina Display" id="menu-abs-button-1"><button disabled><div class="animation-pulse"></div></button></div>
+					<div data-toggle="tooltip" data-placement="top" title="Powered by Intel" id="menu-abs-button-2"><button disabled><div class="animation-pulse"></div></button></div>
+					<div data-toggle="tooltip" data-placement="top" title="Vandal and Water Proof" id="menu-abs-button-3"><button disabled><div class="animation-pulse"></div></button></div>
+					<div data-toggle="tooltip" data-placement="top" title="Unique Multi-Touch Technology" id="menu-abs-button-4"><button disabled><div class="animation-pulse"></div></button></div>
                 </div>
             </div>
         </div>
@@ -63,34 +129,30 @@
 </section>
 
 <!--section3-->
-<section>
-    <!--<div id="flipcards" class="row">
-        <div class="col-md-4 text-center">
-            <small>01.</small>
-            <h1>Double your profit</h1>
-            <img src="img/benefits/benefits01.png" class="img-responsive center-block">
-        </div>
-        <div class="col-md-4 text-center">
-            <small>02.</small>
-            <h1>Slash your cost</h1>
-            <img src="img/benefits/benefits02.png" class="img-responsive center-block">
-        </div>
-        <div class="col-md-4 text-center">
-            <small>03.</small>
-            <h1>Take full control</h1>
-            <img src="img/benefits/benefits03.png" class="img-responsive center-block">
-        </div>
-    </div>-->
-    <div id="flipcards" class="row text-center">
+<section id="flipcards">
+    <div class="text-center clearfix">
         <div class="flip-container col-md-4">
             <div class="card">
                 <div class="front">
                     <small>01.</small>
-                    <h1>Double your profit</h1>
+                    <h2>Double your profit</h2>
                     <img src="img/benefits/benefits01.png" class="img-responsive center-block">
                 </div>
                 <div class="back">
-                    <p>text</p>
+                    <div class="d-flex">
+                        <b>Increase every check by up to 32%</b>
+                        <p>The waiter-independent ordering system, with sharp graphics and smart suggestions,
+                            allows and encourages guests to order more and more. With IRT technology they
+                            don’t have to collect their orders in one large list or wait for their waiter’s
+                            recommendations. Recent research indicates that this innovative feature alone will
+                            increase your average check by up to 32%!</p>
+                        <b>Incredible Up-Selling</b>
+                        <p>Think about the IRT as a powerful and tireless sales machine that never sleeps! Don’t
+                            limit yourself to food. Now you can sell almost anything—consider games, gifts, any
+                            types of discounts, gift certificates or tourist packages. Your guests can now book
+                            rooms in hotels, order taxis straight to the door, or even purchase vacation
+                            packages—and your business will get a percentage of each transaction!</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -98,11 +160,23 @@
             <div class="card">
                 <div class="front">
                     <small>02.</small>
-                    <h1>Slash your cost</h1>
+                    <h2>Slash your cost</h2>
                     <img src="img/benefits/benefits02.png" class="img-responsive center-block">
                 </div>
                 <div class="back">
-                    <p>text</p>
+                    <div class="d-flex">
+                        <b>Save more than $100K every year on staff payroll</b>
+                        <p>With IRT technology, only ⅓ of average staff will be required because all straightforward
+                            ordering and billing can be easily completed directly by guests at the table!
+                            Simultaneously,
+                            tips will remain the same thanks to the smart tip collection feature. This means every
+                            business will be able to save ⅔ on staff salary, while adding ⅔ of overall table tips to
+                            their books.</p>
+                        <b>End the costly battle against theft</b>
+                        <p>IRT technology allows for complete control of all crucial service stages as well as vital
+                            staff. With clear, simple, fully-automated ordering and billing processes, businesses can
+                            now end any and all unacceptable losses in FOH operations.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -110,53 +184,545 @@
             <div class="card">
                 <div class="front">
                     <small>03.</small>
-                    <h1>Take full control</h1>
+                    <h2>Take full control</h2>
                     <img src="img/benefits/benefits03.png" class="img-responsive center-block">
                 </div>
                 <div class="back">
-                    <p>text</p>
+                    <div class="d-flex">
+                        <b>Effective customer feedback</b>
+                        <p>IRT technology will collect all customer feedback much more comprehensively and effectively
+                            thanks to the smart and user-friendly software. It will never forget to ask for feedback
+                            and will never lose or distort any transaction results, so you’ll always have the best
+                            information at your fingertips to help make your business run better than ever before.</p>
+                        <b>Attract more guests</b>
+                        <p>A modern, updated, fresh and inspiring atmosphere will increase visitor flow dramatically.
+                            With a new interactive restaurant you’ll be able to easily create the “big buzz” every local
+                            community constantly craves! So prepare to become the new dining “destination” in the
+                            neighborhood scene.</p>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
 
-    </div>
-    </div>
 </section>
 
 <!--section4-->
-<section>
-    <div class="tab">
-        <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">London</button>
-        <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-        <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+<section id="section-4">
+    <div class="container">
+        <div class="row">
+			<div class="col-md-12">
+                <h1 class="title-heading-left" data-fontsize="58" data-lineheight="69">Benefits</h1>
+            </div>
+        </div>
     </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="benefits-tabs" class="hidden-xs">
+                    <div class="tab">
+                        <button class="tablinks color-1" onclick="openTab(event, 'Tab-profit')" id="defaultOpen">
+                            Double your profit “from thin air“
+                        </button>
+                        <button class="tablinks color-2" onclick="openTab(event, 'Tab-event')">
+                            Become the local event king
+                        </button>
+                        <button class="tablinks color-3" onclick="openTab(event, 'Tab-marketing')">
+                            Make social marketing free and easy for everyone
+                        </button>
+                        <button class="tablinks color-4" onclick="openTab(event, 'Tab-speed')">
+                            Improve your service speed and accuracy
+                        </button>
+                        <button class="tablinks color-5" onclick="openTab(event, 'Tab-save')">
+                            Save money on renovations
+                        </button>
+                        <button class="tablinks color-6" onclick="openTab(event, 'Tab-paper')">
+                            No more paper
+                        </button>
+                        <button class="tablinks color-7" onclick="openTab(event, 'Tab-command')">
+                            One central command center
+                        </button>
+                        <button class="tablinks color-8" onclick="openTab(event, 'Tab-investment')">
+                            Return on investment in 6-10 months
+                        </button>
 
-    <div id="London" class="tabcontent">
-        <h3>London</h3>
-        <p>London is the capital city of England.</p>
-    </div>
+                    </div>
 
-    <div id="Paris" class="tabcontent">
-        <h3>Paris</h3>
-        <p>Paris is the capital of France.</p>
-    </div>
-
-    <div id="Tokyo" class="tabcontent">
-        <h3>Tokyo</h3>
-        <p>Tokyo is the capital of Japan.</p>
+                    <div id="Tab-profit" class="tabcontent color-1">
+                        <div class="tab-content">
+                            <div class="d-flex">
+                                <h3>Double your profit “from thin air“</h3>
+                                <p>With IRT technology, everyone can control an absolutely new and unbelievably powerful
+                                    advertising channel. It’s like broadcasting your own TV channel, but with even more
+                                    control.
+                                    You can sell to your visitors outside your doors access to goods and services inside
+                                    and
+                                    still make money “from thin air”. Used wisely, the IRT will allow you to increase
+                                    your raw
+                                    income by up to 50%, which will definitely look good on your bottom line.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="Tab-event" class="tabcontent color-2">
+                        <div class="tab-content">
+                            <div class="d-flex">
+                                <h3>Become the local event king</h3>
+                                <p>Every IRT will bring near limitless possibilities when it comes to dominating local
+                                    events.
+                                    With the vivid visual impression that an IRT can create, businesses can take it to
+                                    new
+                                    levels in terms of hosting birthday parties, corporate anniversaries and weddings.
+                                    Decorate
+                                    any space with the customer’s personalized photos using the optional wall projection
+                                    technology, show thematic slide shows and videos/movies on tables, or run games and
+                                    competitions between tables. Imagination is now the only limit!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="Tab-marketing" class="tabcontent color-3">
+                        <div class="tab-content">
+                            <div class="d-flex">
+                                <h3>Make social marketing free and easy for everyone</h3>
+                                <p>Because of tight integration with major social networks, guests and visitors can and
+                                    will
+                                    enthusiastically promote the restaurant all by themselves. Proactive social
+                                    marketing like
+                                    this is invaluable and will undoubtedly be many times more effective than
+                                    traditional SMM
+                                    avenues.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="Tab-speed" class="tabcontent color-4">
+                        <div class="tab-content">
+                            <div class="d-flex">
+                                <h3>Improve your service speed and accuracy</h3>
+                                <p>With IRT technology there’s no need for waiters to take orders or even to cash-out.
+                                    These
+                                    operations will automatically happen without a hitch when your guests are ready. It
+                                    will
+                                    take mere seconds and save an enormous amount of time for both the staff and guests.
+                                    Research indicates that you can expect substantially more visitors per seat in an
+                                    IRT
+                                    restaurant versus a more traditional setting.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="Tab-save" class="tabcontent color-5">
+                        <div class="tab-content">
+                            <div class="d-flex">
+                                <h3>Save money on renovations</h3>
+                                <p>Now that the restaurant is fully digital, any and every theme as well as your overall
+                                    daily
+                                    atmosphere can be altered quickly, easily and very reasonably. New pictures, videos
+                                    and
+                                    social media content will continually create fresh, exciting impressions on new
+                                    visitors and
+                                    regular guests. And when choosing projection technology for interactive walls, you
+                                    can do
+                                    the same with an entire room. A quick, simple and always inviting revamp can now be
+                                    part of
+                                    the daily menu.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="Tab-paper" class="tabcontent color-6">
+                        <div class="tab-content">
+                            <div class="d-flex">
+                                <h3>No more paper</h3>
+                                <p>Become green and be even more effective while you’re at it! With IRT technology,
+                                    paper is a
+                                    thing of the past and that’s good for everyone. A smart, beautiful and engaging IRT
+                                    menu
+                                    will do the same job, only better, and will be easier on the budget as well.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="Tab-command" class="tabcontent color-7">
+                        <div class="tab-content">
+                            <div class="d-flex">
+                                <h3>One central command center</h3>
+                                <p>Throw away any outdated POS, CRM and ERP software and all the hassles that come with
+                                    them.
+                                    Forget about those overly complex reports that are difficult to use or understand.
+                                    IRT will
+                                    provide easy access to a simple yet powerful Central Command Center with all the
+                                    functionality you require and more. Conveniently collect all the vital data needed,
+                                    and then
+                                    streamline operations so that they work much more effectively for everyone!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="Tab-investment" class="tabcontent color-8">
+                        <div class="tab-content">
+                            <div class="d-flex">
+                                <h3>Return on investment in 6-10 months</h3>
+                                <p>Installing an IRT system may temporarily increase the budget by 30-40% initially, but
+                                    it will
+                                    begin paying for itself immediately before paying off quickly. Depending on certain
+                                    specific
+                                    factors you should reasonably expect an ROI in less than a year and then enjoy
+                                    profits from
+                                    that point forward. IRT technology creates a brand-new, innovative business which
+                                    will open
+                                    up new possibilities every day moving forward.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-group visible-xs" id="benefits-panels">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#benefits-panels" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    Double your profit “from thin air“
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="panel-body color-1">
+                                <h3>Double your profit “from thin air“</h3>
+                                <p>With IRT technology, everyone can control an absolutely new and unbelievably powerful
+                                    advertising channel. It’s like broadcasting your own TV channel, but with even more
+                                    control.
+                                    You can sell to your visitors outside your doors access to goods and services inside
+                                    and
+                                    still make money “from thin air”. Used wisely, the IRT will allow you to increase
+                                    your raw
+                                    income by up to 50%, which will definitely look good on your bottom line.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingTwo">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#benefits-panels" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Become the local event king
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                            <div class="panel-body color-2">
+                                <h3>Become the local event king</h3>
+                                <p>Every IRT will bring near limitless possibilities when it comes to dominating local events. With the vivid visual impression that an IRT can create, businesses can take it to new levels in terms of hosting birthday parties, corporate anniversaries and weddings. Decorate any space with the customer’s personalized photos using the optional wall projection technology, show thematic slide shows and videos/movies on tables, or run games and competitions between tables. Imagination is now the only limit!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingThree">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#benefits-panels" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Make social marketing free and easy for everyone
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                            <div class="panel-body color-3">
+                                <h3>Make social marketing free and easy for everyone</h3>
+                                <p>Because of tight integration with major social networks, guests and visitors can and will enthusiastically promote the restaurant all by themselves. Proactive social marketing like this is invaluable and will undoubtedly be many times more effective than traditional SMM avenues.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingFour">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#benefits-panels" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Improve your service speed and accuracy
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                            <div class="panel-body color-4">
+                                <h3>Improve your service speed and accuracy</h3>
+                                <p>With IRT technology there’s no need for waiters to take orders or even to cash-out. These operations will automatically happen without a hitch when your guests are ready. It will take mere seconds and save an enormous amount of time for both the staff and guests. Research indicates that you can expect substantially more visitors per seat in an IRT restaurant versus a more traditional setting.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingFive">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#benefits-panels" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Save money on renovations
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                            <div class="panel-body color-5">
+                                <h3>Save money on renovations</h3>
+                                <p>Now that the restaurant is fully digital, any and every theme as well as your overall daily atmosphere can be altered quickly, easily and very reasonably. New pictures, videos and social media content will continually create fresh, exciting impressions on new visitors and regular guests. And when choosing projection technology for interactive walls, you can do the same with an entire room. A quick, simple and always inviting revamp can now be part of the daily menu.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingSix">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#benefits-panels" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    No more paper
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                            <div class="panel-body color-6">
+                                <h3>No more paper</h3>
+                                <p>Become green and be even more effective while you’re at it! With IRT technology, paper is a thing of the past and that’s good for everyone. A smart, beautiful and engaging IRT menu will do the same job, only better, and will be easier on the budget as well.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingSeven">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#benefits-panels" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                    One central command center
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+                            <div class="panel-body color-7">
+                                <h3>One central command center</h3>
+                                <p>Throw away any outdated POS, CRM and ERP software and all the hassles that come with them. Forget about those overly complex reports that are difficult to use or understand. IRT will provide easy access to a simple yet powerful Central Command Center with all the functionality you require and more. Conveniently collect all the vital data needed, and then streamline operations so that they work much more effectively for everyone!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingEight">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#benefits-panels" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                    Return on investment in 6-10 months
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
+                            <div class="panel-body color-8">
+                                <h3>Return on investment in 6-10 months</h3>
+                                <p>Installing an IRT system may temporarily increase the budget by 30-40% initially, but it will begin paying for itself immediately before paying off quickly. Depending on certain specific factors you should reasonably expect an ROI in less than a year and then enjoy profits from that point forward. IRT technology creates a brand-new, innovative business which will open up new possibilities every day moving forward.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
-<!--section7-->
-<section>
+<!--THE BRAVE NEW RESTAURANT OPERATION-->
+<section id="brave-new">
+    <div class="text-center">
+        <h1>The brave new restaurant operation</h1>
+        <img src="img/os-main1.gif" style="display: none;">
+    </div>
+</section>
+
+<section id="section-5">
+    <div id="operations">
+        <div>
+            <div id="operations-1" class="technology-slide">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="technology-text">
+                            <p></p>
+                            <h2>Orders and tables</h2>
+                            <p>Management now has the ability to instantly see and control what happens on every table. The IRT system collects all orders and processes them to the staff for rapid expedition, and the management can then oversee and effectively adjust to any situation, all from one central location.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-7 hidden-xs">
+                        <img src="img/operations/operations-1.png" class="img-responsive center-block">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div id="operations-2" class="technology-slide">
+                <div class="row">
+                    <div class="col-md-7 hidden-xs">
+                        <img src="img/operations/operations-2.png" class="img-responsive center-block">
+                    </div>
+                    <div class="col-md-5">
+                        <div class="technology-text">
+                            <p></p>
+                            <h2>Live order map</h2>
+                            <p>This page will provide a true “eagle-eye view” of any restaurant. Empty tables, served tables and waiting tables are all easy to track on the screen. What’s more, any position can be changed on the screen by simply dragging-and-dropping to simulate any desired room layout.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div id="operations-3" class="technology-slide">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="technology-text">
+                            <p></p>
+                            <h2>Detailed table view</h2>
+                            <p>With DTV, management can control any situation with any specific table. Icons indicate the order status, waiter calls and check-out requests, so no manager will miss any key business actions or transactions!</p>
+                        </div>
+                    </div>
+                    <div class="col-md-7 hidden-xs">
+                        <img src="img/operations/operations-3.png" class="img-responsive center-block">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div id="operations-4" class="technology-slide">
+                <div class="row">
+                    <div class="col-md-7 hidden-xs">
+                        <img src="img/operations/operations-4.png" class="img-responsive center-block">
+                    </div>
+                    <div class="col-md-5">
+                        <div class="technology-text">
+                            <p></p>
+                            <h2>Point of Sales</h2>
+                            <p>Here’s the classic, old-school POS functionality in a faster, easier, much more intuitive framework. Manage orders, print bills and apply discounts with the powerful yet user-friendly POS module.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div id="operations-5" class="technology-slide">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="technology-text">
+                            <p></p>
+                            <h2>Staff Management</h2>
+                            <p>Review personal work data, check updates, and provide fair rewards—all it takes is a few minutes to set up the entire operation. And with this tool, management can finally and conveniently check real staff performance at any time.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-7 hidden-xs">
+                        <img src="img/operations/operations-5.png" class="img-responsive center-block">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div id="operations-6" class="technology-slide">
+                <div class="row">
+                    <div class="col-md-7 hidden-xs">
+                        <img src="img/operations/operations-6.png" class="img-responsive center-block">
+                    </div>
+                    <div class="col-md-5">
+                        <div class="technology-text">
+                            <p></p>
+                            <h2>Watch Control</h2>
+                            <p>Every waiter in the interactive restaurant can now be equipped with their own personal IRT Smart Watch. It can also track each waiter’s activity and instantly transfer the information directly to a staff management Command Center.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div id="operations-7" class="technology-slide">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="technology-text">
+                            <p></p>
+                            <h2>Menu Management</h2>
+                            <p>A great tool for creating a “live” menu for every dish currently on offer. Upload pictures or even videos, write descriptions, choose a price and offer options for discounts. Voila! This smart, engaging and fun interactive menu not only sells your dishes better than ever before, but also encourages guests to order more!</p>
+                        </div>
+                    </div>
+                    <div class="col-md-7 hidden-xs">
+                        <img src="img/operations/operations-7.png" class="img-responsive center-block">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div id="operations-8" class="technology-slide">
+                <div class="row">
+                    <div class="col-md-7 hidden-xs">
+                        <img src="img/operations/operations-8.png" class="img-responsive center-block">
+                    </div>
+                    <div class="col-md-5">
+                        <div class="technology-text">
+                            <p></p>
+                            <h2>Client Management (CRM)</h2>
+                            <p>With IRT, management receives a “magic” database that fills up with contacts automatically every time any new visitor logs in to Facebook. You’ll then be able to cater to their needs and expand your customer base simultaneously.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div id="operations-9" class="technology-slide">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="technology-text">
+                            <p></p>
+                            <h2>Content Management (CMS)</h2>
+                            <p>Take real control of how the restaurant space looks online. In this panel you can create any media set from any table in the room as well as define background pictures and videos which will create an always fresh atmosphere for all guests to enjoy.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-7 hidden-xs">
+                        <img src="img/operations/operations-9.png" class="img-responsive center-block">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div id="operations-10" class="technology-slide">
+                <div class="row">
+                    <div class="col-md-7 hidden-xs">
+                        <img src="img/operations/operations-10.png" class="img-responsive center-block">
+                    </div>
+                    <div class="col-md-5">
+                        <div class="technology-text">
+                            <p></p>
+                            <h2>Multiple language support</h2>
+                            <p>Every table can now “speak” in any language required to make business work! Simply create a set of available languages in the operation menu and it instantly becomes available to every table in your space. And if you should ever need any additional languages, simply make a request and it can be set up at no additional cost.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div id="operations-11" class="technology-slide">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="technology-text">
+                            <p></p>
+                            <h2>App Management</h2>
+                            <p>Add, configure or delete any and all applications you want to use in your space with ease! Conveniently create and then define all the best attributes of your space within your interactive experience to “move” all your customers in exactly the direction you want them to “see”.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-7 hidden-xs">
+                        <img src="img/operations/operations-11.png" class="img-responsive center-block">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div id="operations-12" class="technology-slide">
+                <div class="row">
+                    <div class="col-md-7 hidden-xs">
+                        <img src="img/operations/operations-12.png" class="img-responsive center-block">
+                    </div>
+                    <div class="col-md-5">
+                        <div class="technology-text">
+                            <p></p>
+                            <h2>Website constructor</h2>
+                            <p>Is a modern, functional, intuitive and eye-catching website that’s simple to setup and easy to update a business requirement? Of course it is. This feature can now be added at no additional cost with the IRT system! Any new website can be up-and-running in minutes, maintain a reservation feature and be fully integrated with any restaurant management software.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--section5-->
+<section id="section-6" class="pt-120">
     <div class="container">
         <div class="row">
+            <div id="analitics-text" class="col-md-12 text-center">
+            	<span class="op-icon"></span>
+                <p>Come experience a brand new Command Centre for everything that your guest requires for an exciting new dining experience! And the powerful yet simple software puts all the control in your hand at the touch of your fingertips.</p>           
+   			</div>
             <div id="analitics" class="col-md-12">
                 <div id="analitics-wrap" class="center-block">
                     <img src="img/horizontal-scroll/analytics.jpg">
                 </div>
             </div>
-            <div class="col-md-8 col-md-offset-2 text-center">
+            <div class="col-md-8 col-md-offset-2 text-center zindex2">
                 <input id="horizontal-slider" type="range" min="0" max="1000" value="0"
                        oninput="horizontalScroll(this.value)" onchange="horizontalScroll(this.value)">
             </div>
@@ -164,11 +730,502 @@
     </div>
 </section>
 
+<!--section7-->
+<section>
+   <!--
+    <div class="container">
+        <div class="row">
+			<div class="col-md-12">
+                <h1 class="title-heading-left" data-fontsize="58" data-lineheight="69">Protection</h1>
+            </div>
+        </div>
+    </div>
+    -->
+    <div id="protection-player-container">
+        <div id="protection-player"></div>
+    </div>
+</section>
+
+
+<!--section8-->
+<section id="section-8">
+    <div id="technology">
+        <div>
+            <div id="technology-multitouch" class="technology-slide">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="technology-text">
+                            <p>Technology</p>
+                            <h2>Unlimited Multi-Touch surface</h2>
+                            <p>The unique Touch Technology supports an unlimited number
+                                of touches. It will perform flawlessly even when every
+                                guest sitting at the table is enthusiastically exploring
+                                all the hands-on possibilities. Touch Technology allows for
+                                the enjoyment of IRT technology without limits.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-7 hidden-xs">
+                        <img src="img/technology/technology-img1.jpg" class="img-responsive center-block">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div id="technology-recognition" class="technology-slide">
+                <div class="row">
+                    <div class="col-md-7 hidden-xs">
+                        <img src="img/technology/hands.png" class="img-responsive center-block">
+                    </div>
+                    <div class="col-md-5">
+                        <div class="technology-text">
+                            <p>Technology</p>
+                            <h2>Instant Hand/Object Recognition</h2>
+                            <p>Touch Technology instantly distinguishes the subtle
+                                differences between every hand and object placed on the
+                                tabletop, and then effortlessly delivers the most innovative
+                                method of communication with the interactive table.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div id="technology-display" class="technology-slide">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="technology-text">
+                            <p>Display</p>
+                            <h2>4x more pixels</h2>
+                            <p>4K resolution is effectively four times sharper than that of Full HD,
+                                so you'll see the picture, not the pixels, even up close. The first
+                                time you experience the screen, you might not believe your eyes.
+                                And of course this means that all applications and all text will be
+                                more detailed than ever before.</p>
+                            <p><b>Full HD TV</b> - <span>1920x1080px</span></p>
+                            <p><b>Interactive Table</b> - <span>4K Ultra HD 3840x2160px</span></p>
+                        </div>
+                    </div>
+                    <div class="col-md-7 hidden-xs">
+                        <img src="img/technology/display-img2.jpg" class="img-responsive center-block">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div id="technology-payment" class="technology-slide">
+                <div class="row">
+                    <div class="col-md-7 hidden-xs">
+                        <img src="img/technology/more-img1.png" class="img-responsive center-block">
+                    </div>
+                    <div class="col-md-5">
+                        <div class="technology-text">
+                            <p>Additional features</p>
+                            <h2>A range of payment options</h2>
+                            <p>
+                                IRT will change how customers pay with breakthrough contact-less payment
+                                technology (or credit card), with our unique security features built right
+                                into the device. So now customers can use their smartphones or credit
+                                cards to pay in a simple, safe and completely secure method.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div id="technology-invitation" class="technology-slide">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="technology-text">
+                            <p>Additional features</p>
+                            <h2>A personal invitation</h2>
+                            <p>
+                                Use NFC, mobile apps, or a QR code for easy access to your customer
+                                account and instantly receive discounts and Facebook data, or simply
+                                share photos with your friends online.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-7 hidden-xs">
+                        <img src="img/technology/more-img2.jpg" class="img-responsive center-block">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div id="technology-cameras" class="technology-slide">
+                <div class="row">
+                    <div class="col-md-7 hidden-xs">
+                        <img src="img/technology/more-img3.jpg" class="img-responsive center-block">
+                    </div>
+                    <div class="col-md-5">
+                        <div class="technology-text">
+                            <p>Additional features</p>
+                            <h2>Amazing cameras for everyone</h2>
+                            <p>
+                                Smile! With four built-in high quality cameras, customers will be able
+                                to clearly see each other on the table display, do video conferences
+                                with any guest from other tables, or make and share their favorite
+                                “selfies”. It’s not only fun, it’s a brand new type of fun!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--section9-->
+<section id="section-9" class="pt-120">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="title-heading-left" data-fontsize="58" data-lineheight="69">Inside</h1>
+            </div>
+            <div class="col-md-12">
+                <div class="inside-slider">
+                    <div id="inside-sensor">
+                        <div><h2>Touch sensor</h2></div>
+                        <div><b>8 mm’s of</b> Diamond glass</div>
+                        <div><b>Gesture</b> sensor</div>
+                        <div><b>Unlimited</b> Multi-Touch sensor</div>
+                        <div><b>Proximity</b> sensor</div>
+                        <div><b>Ultra HD retina</b> display</div>
+                    </div>
+                    <div id="inside-hardware">
+                        <div>
+                            <ul>
+                                <li>
+                                    <span class="list-header">Display</span><br>
+                                    <p>Ultra HD 4k screen with 3840‑by‑2160 resolution with support for millions of
+                                        colors</p>
+                                </li>
+                                <li>
+                                    <span class="list-header">Processor</span><br>
+                                    <p>3.6GHz quad-core Intel Core i7(Turbo Boost up to 4.4GHz)</p>
+                                </li>
+                                <li>
+                                    <span class="list-header">Memory</span><br>
+                                    <p>up to 32GB of DDR3 memory</p>
+                                </li>
+                                <li>
+                                    <span class="list-header">Graphics</span><br>
+                                    <p>Nvidia GeForce GTX 970 graphics processorwith up to 4GB of GDDR5 memory</p>
+                                </li>
+                                <li>
+                                    <span class="list-header">Storage</span><br>
+                                    <p>128GB of flash storage (SSD)</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="weight-and-dimensions">
+                        <div><h2>Weight and dimensions</h2></div>
+                        <div><b>50’’</b> (3840*2160) Ultra HD retina display</div>
+                        <div><b>Length of table</b> 1200 mm</div>
+                        <div><b>Table width</b> 700 mm</div>
+                        <div><b>Screen thickness</b> 25 mm</div>
+                        <div><b>Weight:</b> 67 kg</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--section 10-->
+<section>
+    <div id="slider-10">
+        <div class="fading">
+            <div id="slider-10-container">
+                <div> <!--just wrapper, inside which we can apply styles for each slide-->
+                    <div id="slider-10-benefits" class="slider-10-content">
+                        <h2 class="text-center">BENEFITS FOR THE MALL</h2>
+                        <ul>
+                            <li>Taking additional income from food court area</li>
+                            <li>Creating new communication channel between visitors and tenants</li>
+                            <li>Attracting more eaters to Foodcourt</li>
+                            <li>Attracting more guests to Shopping Mall as one of the key anchors</li>
+                            <li>Switching visitors from smartphones to interactive shopping/entertainment activity</li>
+                            <li>Recognising customer loyalty profiles via password-less logins and engaging them to
+                                share their
+                                experience over social networks
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div id="slider-10-performance" class="slider-10-content">
+                        <h2 class="text-center">PERFORMANCE DATA</h2>
+                        <p><b>200 TABLES</b> - average size</p>
+                        <p><b>1200 SQ.M</b> - average area</p>
+                        <p><b>3,000,000</b> - number of people served in one year</p>
+                        <p><b>1,000,000 HOURS</b> - cumulative time of interactive contact provided in 1 year</p>
+                        <p><b>2700&euro;</b> - installation price per sq.m</p>
+                        <p><b>20&euro;/month</b> - service price per sq.m</p>
+                        <p><b>200&euro;/month</b> - expected generated profit</p>
+                    </div>
+                </div>
+                <div>
+                    <div id="slider-10-income" class="slider-10-content">
+                        <h2 class="text-center">INCOME CHANNELS</h2>
+                        <div>
+                            <div class="column">
+                                <b>ADVERTISING REVENUE</b>
+                                <p>FOR</p>
+                                <p class="text-big">100%</p>
+                                <p>OF TRAFFIC FLOW</p>
+                            </div>
+                            <div class="column">
+                                <b>FEE ON FOOD ORDERING</b>
+                                <p>FOR</p>
+                                <p class="text-big">~50%</p>
+                                <p>OF FLOW</p>
+                            </div>
+                            <div class="column">
+                                <b>DATA ABOUT A VISITOR</b>
+                                <p>FOR</p>
+                                <p class="text-big">50%</p>
+                                <p>OF FLOW</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="column">
+                                <b>SURVEYS</b>
+                                <p>FOR</p>
+                                <p class="text-big">2-5%</p>
+                                <p>OF FLOW</p>
+                            </div>
+                            <div class="column">
+                                <b>GAMING</b>
+                                <p>FOR</p>
+                                <p class="text-big">20-30%</p>
+                                <p>OF FLOW</p>
+                            </div>
+                            <div class="column">
+                                <b>CATALOGUE SHOWCASING</b>
+                                <p>FOR</p>
+                                <p class="text-big">30-50%</p>
+                                <p>OF FLOW</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="column">
+                                <b>FEE ON ENTERTAINING TICKET
+                                    <ORDERING></ORDERING>
+                                </b>
+                                <p>FOR</p>
+                                <p class="text-big">5-10%</p>
+                                <p>OF FLOW</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!--section 11-->
+<section id="section-11">
+    <div id="usecases" class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Usecases</h1>
+                <div class="flip-container row">
+                    <div id="usecases-1" class="col-md-6">
+                        <div class="card carderr">
+                            <div class="front sadasdasd">
+                                <div class="usecases-img-container">
+                                    <img src="img/usecases/1.jpg" class="img-responsive">
+                                </div>
+                                <h3>HoReCa</h3>
+                            </div>
+                            <div class="back">
+                                <div class="d-flex">
+                                    <p>Hotels, Restaurants, Cafes, Bars, Clubs. IRT can convert a traditional cafe into a modern generation communication hub. More fun, more interaction and more integration – this is the demand of modern people throughout the world</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="usecases-2" class="col-md-6">
+                        <div class="card carderr">
+                            <div class="front">
+                                <div class="usecases-img-container">
+                                    <img src="img/usecases/2.jpg" class="img-responsive">
+                                </div>
+                                <h3>Casino</h3>
+                            </div>
+                            <div class="back">
+                                <div class="d-flex">
+                                    <p>Just think about Las Vegas!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="usecases-3" class="col-md-6">
+                        <div class="card carderr">
+                            <div class="front">
+                                <div class="usecases-img-container">
+                                    <img src="img/usecases/3.jpg" class="img-responsive">
+                                </div>
+                                <h3>Airports</h3>
+                            </div>
+                            <div class="back">
+                                <div class="d-flex">
+                                    <p>Time control and navigation assistance are key. There are many benefits with IRT integration into an airport`s cafe, restaurants, waiting zones and duty-free shops</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="usecases-4" class="col-md-6">
+                        <div class="card carderr">
+                            <div class="front">
+                                <div class="usecases-img-container">
+                                    <img src="img/usecases/4.jpg" class="img-responsive">
+                                </div>
+                                <h3>Malls</h3>
+                            </div>
+                            <div class="back">
+                                <div class="d-flex">
+                                    <p>We breathe new life into the old shopping mall food courts. IRT can make it amazing, fresh and alive. Now it is a cantral part of the mall – for shopping, eating, communicating and entertaining. A new age is coming!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--section 12-->
+<section id="restaurants">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+    			<h1>Restaurants</h1>
+            </div>
+        </div>
+	</div>
+    <div id="restaurants-slider" class="flip-container">
+        <div class="card carder">
+            <div class="front werasdas">
+                <img src="img/rest-gallery/1.jpg" class="img-responsive">
+            </div>
+            <div class="back">
+                <h3>Ebony <span>Dubai, United Arab Emirates</span></h3>
+            </div>
+        </div>
+        <div class="card carder">
+            <div class="front">
+                <img src="img/rest-gallery/2.jpg" class="img-responsive">
+            </div>
+            <div class="back">
+                <h3>iCafe <span>Abu Dhabi, United Arab Emirates</span></h3>
+            </div>
+        </div>
+        <div class="card carder">
+            <div class="front">
+                <img src="img/rest-gallery/3.jpg" class="img-responsive">
+            </div>
+            <div class="back">
+                <h3>Neo Bar <span>Vladikavkaz, Russia</span></h3>
+            </div>
+        </div>
+        <div class="card carder">
+            <div class="front">
+                <img src="img/rest-gallery/4.jpg" class="img-responsive">
+            </div>
+            <div class="back">
+                <h3>Oshi <span>Limassol, Cyprus</span></h3>
+            </div>
+        </div>
+        <div class="card carder">
+            <div class="front">
+                <img src="img/rest-gallery/5.jpg" class="img-responsive">
+            </div>
+            <div class="back">
+                <h3>Papashon Interactive cafe <span>Lviv, Ukraine</span></h3>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!--section 13(footer)-->
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h1>Send us your inquiry</h1>
+                <form action="#">
+                    <input type="text" placeholder="Enter Your name" name="name">
+                    <input type="email" placeholder="Enter Your email" name="email">
+                    <input type="tel" placeholder="Phone number" name="phone">
+					<textarea type="text" placeholder="Write us a question" name="question"></textarea>
+                    <input type="submit" value="SEND INQUIRY">
+                </form>
+
+            </div>
+            <div class="col-md-6 hidden-xs">
+                <img src="img/table3.png" class="img-responsive">
+            </div>
+        </div>
+        <div class="row  footer-text">
+            <div class="col-md-6 text-left">
+                <span>Copyright 2017 Hinteractive Technology</span>
+            </div>
+            <div class="col-md-6 text-right">
+                <p>+44 744 248 0582<br>
+                    +38 067 620 9555<br>
+					<a href="mailto:vt@hintechnology.com">vt@hintechnology.com</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.scrollTo.js"></script>
+
+<script src="js/nav-scroll.js"></script>
 <script src="js/video.js"></script>
 <script src="js/tabs.js"></script>
 <script src="js/flip.js"></script>
 <script src="js/horizontal-scroll.js"></script>
+
+<script type="text/javascript" src="js/slick/slick.min.js"></script>
+
+<script src="js/slider-slick-init.js"></script>
+<script>
+	$(document).ready(function() {
+		$(".werasdas img").bind('load', function() {
+			var height = $(this).height();
+			console.log("высота=" + height);
+			$(".carder .back").height(height);
+		});
+	});
+</script>
+<script>
+	$(document).ready(function() {
+		$(".sadasdasd img").bind('load', function() {
+			var height = $(this).height();
+			console.log("высота 2=" + height);
+			$(".carderr .back").height(height);
+			$(".carderr").height(height);
+		});
+	});
+</script>
+<!--initilize tooltips-->
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+</script>
 </body>
 </html>

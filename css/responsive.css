@@ -1,0 +1,128 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+@media screen and (max-width: 1200px) {
+	p {
+		font-size: 16px;
+	}
+	#topblock-header {
+		color: #636a70;
+		font-size: 50px;
+	}
+	#flipcards h2, small {
+		font-size: 58px;
+		line-height: 72px;
+	}
+	#flipcards .card .back b {
+		font-size: 22px;
+		text-transform: uppercase;
+	}
+	.tabcontent p {
+		font-size: 22px;
+	}
+	.technology-text h1 {
+		margin-bottom: 10px;
+		font-weight: bold;
+		font-size: 34px;
+	}
+	#section-4:after {
+		display: none;
+	}
+	#restaurants-slider .card {
+		/* height: 225px; */
+	}
+	#protection-player-container {
+		margin: 60px 0;
+	}
+	#brave-new {
+		background: url(../img/operation-bg.jpg) center bottom no-repeat;
+		min-height: 380px;
+		background-size: contain;
+	}
+}
+
+@media only screen and (max-width: 980px) {
+	p {
+		font-size: 18px;
+	}
+	#topblock {
+		text-align: center;
+	}
+	#brave-new h1 {
+		font-size: 46px;
+		line-height: 60px;
+		color: #333;
+	}
+	#analitics-wrap {
+		height: 565px;
+		width: 100%;
+		overflow: hidden;
+		padding-top: 49px;
+		padding-bottom: 80px;
+	}
+}
+@media only screen and (max-width: 767px) {
+	p {
+		font-size: 16px;
+	}
+	h1 {
+		font-size: 38px;
+	}
+	#video-title {
+		font-size: 84px;
+		line-height: 90px;
+	}
+	.slick-arrow {
+		display: none;
+	}
+	footer h1 {
+		font-size: 38px;
+	}
+	#brave-new h1 {
+		font-size: 36px;
+		line-height: 40px;
+		color: #333;
+	}
+	#analitics-wrap {
+		height: 360px;
+		width: 100%;
+		overflow: hidden;
+		padding-top: 49px;
+		padding-bottom: 80px;
+	}
+	.technology-slide {
+		padding: 50px 40px 0 40px;
+	}
+	#section-5 {
+    padding: 55px 0 10px 0;
+	}
+	#section-6:before, #section-6:after, #section-5:before, #section-5:after {
+		display: none;
+	}
+	.technology-text h2 {
+		margin-bottom: 20px;
+		font-size: 30px;
+	}
+	.technology-text p {
+    	line-height: 1.6;
+	}
+	.technology-text p:first-child {
+		margin-bottom: 10px;
+	}
+	#inside-sensor, #inside-hardware, #weight-and-dimensions {
+		background: transparent;
+	}
+	#usecases h3 {
+		text-align: center;
+		font-size: 28px;
+	}
+	.usecases-img-container {
+		width: 100%;
+		overflow: hidden;
+	}
+	#restaurants-slider .card .back h3 {
+		text-align: center;
+		font-size: 14px;
+	}
+}

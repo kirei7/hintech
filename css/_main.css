@@ -102,64 +102,34 @@ h1:after {
     color: #636a70;
     font-size: 66px;
 }
-#topblock h1:after, #footer h1:after{
-    display: none;
-}
-#menu-abs div {
-    cursor: pointer;
-}
-#menu-abs button {
-    display: inline-block;
-    background: no-repeat center center;
-    width: 100%;
-    height: 100%;
-    border: none;
-    pointer-events: none;
-}
 
+#menu-abs a {
+    display: inline-block;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 41px;
+    height: 41px;
+    position: absolute;
+}
 #menu-abs-button-1 {
+    background-image: url("../img/menu-abs/ic1.png");
     left: 2%;
     bottom: 10%;
-    display: inline-block;
-    width: 41px;
-    height: 41px;
-    position: absolute;
-}
-#menu-abs-button-1 button {
-    background-image: url("../img/menu-abs/ic1.png");
 }
 #menu-abs-button-2 {
+    background-image: url("../img/menu-abs/ic2.png");
     left: 18%;
     bottom: 0;
-    display: inline-block;
-    width: 41px;
-    height: 41px;
-    position: absolute;
-}
-#menu-abs-button-2 button {
-    background-image: url("../img/menu-abs/ic2.png");
 }
 #menu-abs-button-3 {
+    background-image: url("../img/menu-abs/ic3.png");
     left: 36%;
     bottom: -6%;
-    display: inline-block;
-    width: 41px;
-    height: 41px;
-    position: absolute;
-}
-#menu-abs-button-3 button {
-    background-image: url("../img/menu-abs/ic3.png");
 }
 #menu-abs-button-4 {
+    background-image: url("../img/menu-abs/ic4.png");
     left: 56%;
     bottom: -8%;
-    display: inline-block;
-    width: 41px;
-    height: 41px;
-    position: absolute;
-}
-#menu-abs-button-4 button {
-    background-image: url("../img/menu-abs/ic4.png");
 }
 #topblock-button {
     color: white;
@@ -176,10 +146,10 @@ h1:after {
 /*2 section /end*/
 
 /*3 section*/
-/*3 section*/
 #flipcards h2, small{
     font-size: 60px;
     line-height: 72px;
+	margin-bottom: 60px;
 }
 #flipcards h1 {
     font-weight: bold;
@@ -190,10 +160,7 @@ h1:after {
     background-color: #f9f9f9;
     transition: color 0.3s, background-color 0.3s;
 }
-#flipcards .flip-container .back {
-    background-color: #f9f9f9; /*same as #flipcards .flip-container */
-}
-#flipcards .flip-container:hover, #flipcards .flip-container:hover .back {
+#flipcards .flip-container:hover {
     color: white;
     background-color: #f41b22;
 }
@@ -203,24 +170,23 @@ h1:after {
 #flipcards .card>div {
     padding: 30px;
 }
-#flipcards .flip-container:first-child,
-#flipcards .flip-container:first-child .back,
-#flipcards .flip-container:last-child,
-#flipcards .flip-container:last-child .back {
+#flipcards .flip-container:first-child, #flipcards .flip-container:last-child {
     background-color: #eef0f1;
 }
-#flipcards .flip-container:first-child:hover,
-#flipcards .flip-container:first-child:hover .back {
+#flipcards .flip-container:first-child:hover {
     background-color: #b9bbbe;
 }
-#flipcards .flip-container:last-child:hover,
-#flipcards .flip-container:last-child:hover .back {
+#flipcards .flip-container:last-child:hover {
     background-color: #00d1fe;
 }
-/*3 section /end*/
+
 /*3 section /end*/
 
 /*4 section*/
+#section-4 {
+	padding-bottom: 60px;
+	background-color: rgba(0, 96, 178, 0.14);
+}
 #benefits-tabs {
     overflow: hidden;
     position: relative;
@@ -334,20 +300,6 @@ h1:after {
     margin-top: 30px;
     height: 533px;
 }
-#weight-and-dimensions {
-    background: url(../img/inside/wad-img1.png) top right no-repeat;
-    background-size: contain;
-    color: #747474;
-    margin-top: 30px;
-    height: 530px;
-}
-#weight-and-dimensions>div {
-    font-size: 20px;
-    margin-bottom: 40px;
-}
-#weight-and-dimensions b {
-    color: black;
-}
 #inside-hardware li {
     border-top: 1px solid #ebebeb;
 }
@@ -368,9 +320,6 @@ h1:after {
     overflow: hidden;
     position: relative;
     width: 100%;
-}
-.slick-slider {
-	z-index: 2;
 }
 .slick-slider *:focus {
     outline: none;
@@ -491,6 +440,7 @@ h1:after {
     margin: 0 auto;
 }
 .usecases-img-container {
+    height: 406px;
     width: 100%;
     overflow: hidden;
 }
@@ -502,24 +452,26 @@ h1:after {
     background-color: #eaeaea;
 }
 #usecases .back {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
     background-color: rgb(59, 63, 66);
     color: white;
-    padding: 0 20px;
+    padding: 20px;
 }
 #usecases .back p {
+    margin-top: 230px;
     text-align: center;
 }
-
 #usecases-1, #usecases-2{
     margin-bottom: 30px;
+    margin-right: 20px;
+    height: 500px;
+    width: 548px;
+	float: left;
     cursor: pointer;
 }
 #usecases-3, #usecases-4 {
-	margin-bottom: 30px;
+    height: 500px;
+    width: 548px;
+    float: left;
     cursor: pointer;
 }
 /*#usecases-1 {
@@ -537,19 +489,13 @@ h1:after {
 #usecases h3 {
     text-align: center;
     font-size: 42px;
-    margin-bottom: 0;
-    bottom: 0;
-    position: absolute;
-    width: 100%;
-    background-color: #c9d7e4;
-    padding: 10px 0;
 }
 
 /*11 section /end*/
 
 /*12 section*/
 #restaurants-slider .card {
-    /*height: 425px;*/
+    height: 425px;
     -webkit-transition: -webkit-transform 0.3s;
     -moz-transition: -moz-transform 0.3s;
     -o-transition: -o-transform 0.3s;
@@ -557,7 +503,6 @@ h1:after {
     cursor: pointer;
 }
 #restaurants-slider .card img {
-	width: 100%;
     height: 100%;
 }
 #restaurants-slider .card .back{
@@ -582,20 +527,21 @@ footer {
 footer h1{
     font-size: 50px;
 }
-footer form input::-webkit-input-placeholder, footer form textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+footer form input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     color: #cccccc;
 }
-footer form input::-moz-placeholder, footer form textarea::-moz-placeholder { /* Firefox 19+ */
+footer form input::-moz-placeholder { /* Firefox 19+ */
     color: #cccccc;
 }
-footer form input:-ms-input-placeholder, footer form textarea:-ms-input-placeholder { /* IE 10+ */
+footer form input:-ms-input-placeholder { /* IE 10+ */
     color: #cccccc;
 }
-footer form input:-moz-placeholder, footer form textarea:-moz-placeholder { /* Firefox 18- */
+footer form input:-moz-placeholder { /* Firefox 18- */
     color: #cccccc;
-} 
+} {
 
-footer form input, footer form textarea {
+}
+footer form input {
     display: block;
     width: 100%;
     height: 53px;
@@ -648,39 +594,12 @@ footer form input[type="submit"] {
     right: 0;
     top: 0;
 }
-#section-5 {
-	padding: 55px 0;
-}
-#section-5:before {
+#section-6:before {
 	content: '';
     background-image: url(../img/baccker-180-rl.png);
     background-position: left bottom;
     background-repeat: no-repeat;
-    background-size: contain;
-    height: 100%;
-    width: 190px;
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-#section-5:after {
-	content: '';
-    background-image: url(../img/baccker-180-lr.png);
-    background-position: right bottom;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 100%;
-    width: 190px;
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-#section-6:before {
-	content: '';
-    background-image: url(../img/baccker-lr-long.png);
-    background-position: left bottom;
-    background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     height: 100%;
     width: 190px;
     position: absolute;
@@ -689,10 +608,10 @@ footer form input[type="submit"] {
 }
 #section-6:after {
 	content: '';
-    background-image: url(../img/baccker-rl-long.png);
+    background-image: url(../img/baccker-180-lr.png);
     background-position: right bottom;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     height: 100%;
     width: 190px;
     position: absolute;
