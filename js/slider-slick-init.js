@@ -1,5 +1,12 @@
 $(document).ready(function () {
     //initialize sliders
+    $('#video-slider').slick(
+        {
+            fade: true,
+            infinite: true,
+            autoplay: false
+        }
+    );
     $('.inside-slider').slick({
         fade: false,
         autoplay: true,
@@ -50,6 +57,10 @@ $(document).ready(function () {
     adjustRestaurantHeight();
     $(window).resize(adjustRestaurantHeight);
 
+    videoAutoPlay();
+    $('#protection-player-container .slick-arrow').click(function () {
+        videoAutoPlay();
+    });
 });
 
 function adjustRestaurantHeight() {
@@ -57,3 +68,19 @@ function adjustRestaurantHeight() {
     $("#restaurants-slider .back").css("height", $("#restaurants-slider .front").css("height"));
 }
 
+function videoAutoPlay() {
+    refreshVideos();
+    playCurrentVideo();
+}
+function refreshVideos() {
+    var videos = $('.slick-track video').toArray();
+    videos.forEach(function (entry) {
+        console.log(entry);
+        entry.pause();
+        entry.currentTime = 0;
+    });
+}
+function playCurrentVideo() {
+    var current = $('#video-slider video.slick-active').toArray();
+    (current[0]).play();
+}

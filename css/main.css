@@ -270,7 +270,38 @@ h1:after {
 
 /*7 section*/
 #protection-player-container {
+    width: 100%;
     margin-bottom: 150px;
+}
+#protection-player-container video {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    max-width: 1280px;
+}
+#protection-player-container .slick-arrow{
+    bottom: 0;
+    top: auto;
+    left: auto;
+    right: auto;
+}
+#protection-player-container .slick-arrow.slick-next {
+    background: url("../img/rrr.png") center no-repeat;
+    left: 86px;
+    right: auto;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+}
+#protection-player-container .slick-arrow.slick-prev {
+    background: url("../img/rrr.png") center no-repeat;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 /*7 section /end*/
 
