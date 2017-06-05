@@ -1,7 +1,12 @@
-var imgWidth = parseFloat($("#analitics-wrap img").css("width"));
-var windowWidth = parseFloat($("#analitics-wrap").css("width"));
+var imgWidth;
+var windowWidth;
+var imgWidthPercent;
+$(document).ready(function () {
+    imgWidth = parseFloat($("#analitics-wrap img").css("width"));
+    windowWidth = parseFloat($("#analitics-wrap").css("width"));
 
-var imgWidthPercent = (imgWidth - windowWidth)/100;
+    imgWidthPercent = (imgWidth - windowWidth)/100;
+});
 
 function horizontalScroll(e) {
     var percents = e/10;
